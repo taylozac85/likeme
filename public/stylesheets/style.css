@@ -50,7 +50,7 @@
 	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
 	border-radius: 4px 4px 4px 4px;
 	margin-top: 20px;
-	padding: 50px;
+	padding-bottom: 10px;
 }
 
 #provider-info {
@@ -73,4 +73,55 @@
 	margin: 20px;
 	width: 155px;
 	font-size: 16px;
+}
+
+.reviewer-pic {
+	height: 110px;
+	width: 110px;
+}
+
+.review-row-first {
+	padding: 10px;
+}
+
+.review-row {
+	padding: 10px;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.reviewer-details {
+	margin: 5px 0px 0px 0px;
+}
+
+.reviewer-company {
+	margin: 0px;
+	padding: 0px;
+}
+
+.reviewer-name {
+
+}
+
+.service {
+	font-weight: bold;
+}
+
+.thumbsup {
+	height: 35px;
+	width: 35px;
+	margin: 20px 0px 10px 0px;
+}
+
+.upvote {
+	height: 15px;
+	width: 15px;
+}
+
+.review-date {
+	font-style: italic;
+}
+
+.review-details-container {
+	text-align: center;
+	padding-right:  30px;
 }
