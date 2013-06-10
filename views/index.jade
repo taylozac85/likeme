@@ -16,10 +16,26 @@ block content
 						li Lighting and heating
 			div.span6
 				div#description-container
-					div#provider-info
-						h3 Elegant Affairs
-						a(href='http://www.elegantaffairscaterers.com', target="_blank") www.elegantaffairscaterers.com
-						p Phone: 212-991-0078
+					div.provider-info
+						div.row-fluid
+							div.span7
+								h3.company-title Elegant Affairs
+								div.social-icon-container
+									a.social-icon(target="_blank", href="https://www.facebook.com/elegantaffairscaterers?fref=ts")
+										img.fb-icon(src="/images/fb-icon.png")
+									a.social-icon(target="_blank", href="http://www.linkedin.com/company/elegant-affairs")
+										img.linkedin-icon(src="/images/linkedin-icon.png")
+								a.company-website(href='http://www.elegantaffairscaterers.com', target="_blank") www.elegantaffairscaterers.com	
+								div.company-contact-info-container
+									p.company-contact-info (212) 375-8484
+									p.company-contact-info
+										a(target="_blank", href="mailto:someone@example.com?Subject=Hello") info@eacaterers.com	
+							div.span5
+								div.pull-right.review-info-container
+									p.thumb-counter 3
+										a(href='#')
+											img.thumbsup-top-page(src='/images/thumbsup.jpg')
+									p $$$<span class="gray-dollar">$</span>
 						div#provider-description
 							p Elegant Affairs is New York City’s premier Corporate Caterer. From Cocktail Receptions to Gala Events, Elegant Affairs plans the finest New York City events. Elegant Affairs designs the menu, organizes the vendors, party rentals, and takes care of every party detail.
 							p Need to roll out your next high-end product launch in an unforgettable fashion? Elegant Affairs is New York City’s premiere caterer.
@@ -37,11 +53,15 @@ block content
 								img.thumbsup(src='/images/thumbsup.jpg')
 								p.review-date May 29, 2013
 						div.span10
-							p.reviewer-details 
-								a.reviewer-name(href='http://www.linkedin.com/profile/view?id=12374562&authType=OUT_OF_NETWORK&authToken=eeiA&locale=en_US&srchid=77d45d23-0f17-47da-94c8-cfee53118808-0&srchindex=4&srchtotal=351&goback=%2Efps_PBCK_airbnb+office+manager_*1_*1_*1_*1_*1_*1_*2_*1_Y_*1_*1_*1_false_1_R_*1_*51_*1_*51_true_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2&pvs=ps&trk=pp_profile_name_link', target="_blank")  Sarah B.
-								| , Executive Office Manager, 
-								a.reviewer-company(href='#') Airbnb
-								img.pull-right.upvote(src='images/upvote.jpg')
+							div.row-fluid
+								div.span11
+									p.reviewer-details
+										a.reviewer-name(href='http://www.linkedin.com/profile/view?id=12374562&authType=OUT_OF_NETWORK&authToken=eeiA&locale=en_US&srchid=77d45d23-0f17-47da-94c8-cfee53118808-0&srchindex=4&srchtotal=351&goback=%2Efps_PBCK_airbnb+office+manager_*1_*1_*1_*1_*1_*1_*2_*1_Y_*1_*1_*1_false_1_R_*1_*51_*1_*51_true_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2&pvs=ps&trk=pp_profile_name_link', target="_blank")  Sarah B.
+										| , Executive Office Manager, 
+										a.reviewer-company(href='#') Airbnb
+								div.span1.upvote-container
+									div.pull-right 4
+										img.upvote(src='images/upvote.jpg')
 							p.review-job-details
 								h5 Description of Service:
 								p We had a major product release this Friday, planned on short notice. We catered cocktails and appetizers for 75. Elegant Affairs provided a full bar, tables and equipment, staff, and, of course, food.
@@ -59,11 +79,15 @@ block content
 								img.thumbsup(src='/images/thumbsup.jpg')
 								p.review-date May 13, 2013
 						div.span10
-							p.reviewer-details 
-								a.reviewer-name(href='http://www.linkedin.com/profile/view?id=9258748&authType=OUT_OF_NETWORK&authToken=z9n5&locale=en_US&srchid=05547fae-2760-42d4-9eaa-c3fbc53542e9-0&srchindex=4&srchtotal=46&goback=%2Efps_PBCK_lyft+office+manager_*1_*1_*1_*1_*1_*1_*2_*1_Y_*1_*1_*1_false_1_R_*1_*51_*1_*51_true_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2&pvs=ps&trk=pp_profile_photo_link', target="_blank")  Quinton S.
-								| , Regional Manager, 
-								a.reviewer-company(href='#') Lyft
-								img.pull-right.upvote(src='images/upvote.jpg')
+							div.row-fluid
+								div.span11
+									p.reviewer-details 
+										a.reviewer-name(href='http://www.linkedin.com/profile/view?id=9258748&authType=OUT_OF_NETWORK&authToken=z9n5&locale=en_US&srchid=05547fae-2760-42d4-9eaa-c3fbc53542e9-0&srchindex=4&srchtotal=46&goback=%2Efps_PBCK_lyft+office+manager_*1_*1_*1_*1_*1_*1_*2_*1_Y_*1_*1_*1_false_1_R_*1_*51_*1_*51_true_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2&pvs=ps&trk=pp_profile_photo_link', target="_blank")  Quinton S.
+										| , Regional Manager, 
+										a.reviewer-company(href='#') Lyft
+								div.span1.upvote-container
+									div.pull-right 1
+										img.upvote(src='images/upvote.jpg')
 							p.review-job-details
 								h5 Description of Service:
 								p Elegant Affairs provided catering, cocktails, staffing and a venue for our SF launch party. They also handled cleanup and setup.
@@ -80,11 +104,15 @@ block content
 								img.thumbsup(src='/images/thumbsup.jpg')
 								p.review-date March 2, 2013
 						div.span10
-							p.reviewer-details 
-								a.reviewer-name(href='#', target="_blank")  Caroline W.
-								| , Executive Assistant to CEO, 
-								a.reviewer-company(href='#') YouNoodle
-								img.pull-right.upvote(src='images/upvote.jpg')
+							div.row-fluid
+								div.span11
+									p.reviewer-details 
+										a.reviewer-name(href='#', target="_blank")  Caroline W.
+										| , Executive Assistant to CEO, 
+										a.reviewer-company(href='#') YouNoodle
+								div.span1.upvote-container
+									div.pull-right 0
+										img.upvote(src='images/upvote.jpg')
 							p.review-job-details
 								h5 Description of Service:
 								p I organized my company's holiday party a little over a month ago, and after speaking with several caterers, I chose JHE for the event. Sian worked with us to create a flavorful menu of tapas, mezze platters, lasagna, salads, vegetables, and desserts, as well as coordinated flowers, rentals, and the bar and coffee cart.
