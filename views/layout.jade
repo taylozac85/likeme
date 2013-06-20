@@ -7,4 +7,16 @@ html
 		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
 		script(src='/bootstrap/js/bootstrap.min.js')
 	body
+		div.navbar-inverse.navbar-fixed-top
+			div.navbar-inner
+				div#navbar-container
+					ul.nav#my-account
+						li.dropdown
+							a.dropdown-toggle(href="#", data-toggle="dropdown") My Account <b class="caret"></b>
+							ul.dropdown-menu
+								li
+									a(href="#") Log out
+					div#my-profile-img-container
+						a(href="#")
+							img#my-profile-img(src="images/yoga1.jpg")
 		block content

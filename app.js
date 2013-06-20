@@ -23,6 +23,15 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+app.get('/profile', function (req, res){
+  res.render('profile');
+});
+app.get('/disc', function (req, res){
+  res.render('disc');
+});
+app.get('/test', function (req, res){
+  res.render('test');
+});
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){

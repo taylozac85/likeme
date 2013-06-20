@@ -1,192 +1,463 @@
-#container {
+.body-container {
 	width: 1020px;
-	margin: 0 auto;
-	padding: 30px 10px;
+	margin: 70px auto;
 }
 
-#logo-container {
-	height: 120px;
-	width: 235px;
-	padding: 50px 0px 10px 0px;
+.bus-pic-container {
+	margin: 0px 5px 20px 0px;
+	text-align: center;
+	opacity: .92;
+	height: 180px;
+}
+
+.bus-pic-container:hover {
+	opacity: 1;
+}
+
+#bus-profile-pic1 {
+	background: url('/images/yoga1.jpg');
+	background-size: cover;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  height: 100%;
+}
+
+#bus-profile-pic2 {
+	background: url('/images/yoga6.jpg') no-repeat center center;
+	background-size: cover;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	height: 100%;
+}
+
+#bus-profile-pic3 {
+	background: url('/images/yoga3.jpeg');
+	background-size: cover;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  height: 100%;
+}
+
+#bus-profile-pic4 {
+	background: url('/images/coffee1.jpg');
+	background-size: cover;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  height: 100%;
+}
+
+#bus-profile-pic5 {
+	background: url('/images/clothing2.jpg');
+	background-size: cover;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  height: 100%;
+}
+
+#bus-profile-pic6 {
+	background: url('/images/clothing1.jpg');
+	background-size: cover;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  height: 100%;
+}
+
+.bus-profile-link:hover {
+	text-decoration: none;
+}
+
+.bus-pic-label {
+	margin: 0px;
+	padding-top: 70px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+.bus-pic-label-city {
+	color: white;
+	font-size: 18px;
+	font-style: italic;
+}
+
+#qa-container {
+	padding: 10px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	border-radius: 4px 4px 4px 4px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#qa-header {
+	margin: 0px;
+}
+
+#qa-input {
+	width: 95%;
+	margin-top: 10px;
+}
+
+#qa-submit-btn {
+	float: right;
+	margin: 10px 2px;
+}
+
+#qa-feed-container {
+	margin-top: 20px;
+	border-radius: 4px 4px 4px 4px;
+	overflow: hidden;	
+}
+
+.qa-links {
+	padding-bottom: 10px;
+}
+
+#tag-container {
+	text-align: left;
+	margin-left: 5px;
+}
+
+#tags-header {
+	margin: 0px 0px 5px 0px;
+}
+
+#tags-other {
+	margin: 5px 0px 0px 0px;
+}
+
+.navbar-fixed-top {
+	margin-bottom: 100px;
+}
+
+.navbar-inner {
+	height: 43px;
+}
+
+#navbar-container {
+	width: 1020px;
+	margin: auto;
+}
+
+#my-profile-img-container {
+	width: 40px;
+	float: right;
+	overflow: hidden;
+}
+
+#my-profile-img {
+	height: 40px;
+	margin-top: 2px;
+	width: auto;
+	opacity: .9;
+}
+
+#my-profile-img:hover {
+	opacity: 1;
+}
+
+#my-account {
+	float: right;
+	margin: 12px 0px 0px 8px;
+}
+
+#search-container {
+	padding: 20px 10px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	border-radius: 4px 4px 4px 4px;	
+	overflow: hidden;
+}
+
+#discover {
+	font-size: 16px;
+	font-weight: bold; 
+	margin: 5px 5px 0px 0px;
+}
+
+#search-container {
+	background-color: #1B1B1B;
+	padding: 10px;
+}
+
+#search-box {
+	margin: 0px;
+	float: left;
+}
+
+#search-text {
+	font-size: 16px;
+	margin: 5px 0px 0px 10px;
+	float: left;
+}
+
+/* Profile */
+
+#profile-container {
+	width: 1020px;
+	height: 400px;
+	margin: 44px auto;
+	position: relative;
+}
+
+#profile-background {
+	background: url('/images/yoga2.jpg') no-repeat center center;
+	background-size: cover;
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	height: 100%;
+}
+
+#profile-title-container {
+	background-color: rgba(27,27,27,.35);
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+}
+
+#profile-title {
+	color: white;
+	margin: 0px 5px;
+	padding: 3px 0px;
+}
+
+#view-photos-btn {
+	float: right;
+	margin: 20px 10px 0px 0px;
+	padding: 14px 42px;
+	font-size: 18px;
+}
+
+#profile-location-container {
+	background-color: rgba(27,27,27,.2);
+	display: inline-block;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
+
+#profile-location {
+	font-size: 24px;
+	font-style: italic;
+	color: white;
+}
+
+#profile-content-container {
+	margin: 0px;
+	padding: 30px 10px 100px 10px;
+	background-color: rgba(235, 235, 235, 0.8);
+}
+
+#owner-profile-pic-container {
+	height: 150px;
+	width: 150px;
+	overflow: hidden;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	border-radius: 4px 4px 4px 4px;
+	float: left;
+	margin-bottom: 15px;
+}
+
+#owner-name {
+	display: inline-block;
+	margin: 0px 0px 5px 10px;
+}
+
+#message-btn {
+	margin: 5px 0px 0px 10px;
+	padding: 6px 18px;
+}
+
+#map-container {
+	float: right;
+	height: 170px;
+	width: 170px;
+	overflow: hidden;
+	margin: 0px 10px 0px 0px;
+}
+
+#company-info-container {
+	clear: both;
+	font-size: 15px;
+}
+
+.company-info {
+	margin-bottom: 10px;
+}
+
+#profile-bio-container {
+	padding-right: 20px;
+}
+
+.qa-profile-pic {
+	height: 60px;
+	width: 60px;
 	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
 	border-radius: 4px 4px 4px 4px;
 }
 
-#logo {
+.qa-profile-thread-container {
+	border: 1px solid #1B1B1B;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	border-radius: 4px 4px 4px 4px;		
+	padding: 10px 10px 40px 10px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.qa-profile-q-container {
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
+}
+
+.qa-profile-a-container {
+	border-bottom: 1px solid gray;
+	padding: 0px 0px 10px 20px;
+	margin-top: 10px;
+}
+
+.view-convo-container {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+#profile-board {
+	border: 1px solid blue;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	border-radius: 4px 4px 4px 4px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+#profile-board-header {
+	font-size: 20px;
+}
+
+/* Discussion */
+
+#disc-body-container {
+	width: 1020px;
+	margin: 44px auto;
+	padding-bottom: 20px;
+	background-color: rgba(235, 235, 235, 0.8);
+}
+
+#disc-left {
+	border-right: 1px solid #1B1B1B;
+	width: 66%;
+}
+
+#disc-header-container {
+	margin: 25px 20px 30px 15px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid #1B1B1B;
+}
+
+#disc-header {
+	font-size: 28px;
+	line-height: 32px;
+	margin-bottom: 20px;
+}
+
+#disc-header-profile-container {
+	margin: 0px 0px 0px 15px;
+}
+
+.disc-profile-details {
+	margin-left: -20px;
+}
+
+.disc-profile-a-container {
+	margin: 0px 20px 15px 30px;
+	border-bottom: 1px solid #1B1B1B;
+	padding-bottom: 5px;
+}
+
+#disc-right {
+	margin-left: 0px;
+	width: 34%;
+	padding-right: 10px;
+}
+
+#disc-right-container {
+	margin: 25px 10px 30px 20px;
+}
+
+#com-header {
+	margin-bottom: 0px;
+}
+
+.com-tags {
+	font-weight: bold;
+	margin: 0px;
+	color: #1B1B1B;
+}
+
+#disc-q-link-container {
+	margin-top: 10px;
+}
+
+#disc-bus-pics-container {
+	margin-top: 10px;
+	text-align: center;
+	margin-right: -15px;
+}
+
+.disc-bus-pic-container {
+	height: 135px;
+	width: 135px;
+	overflow: hidden;
+	display: inline-block;
+	margin: 15px 15px 0px 0px;
 
 }
 
-#services-container {
-	height: auto;
-	width: 235px;
-	margin-top: 20px;
+.disc-bus-pic-container img {
 	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
 	border-radius: 4px 4px 4px 4px;	
 }
 
-#services-list {
-	padding: 10px;
-	font-size: 16px;
+/* TEST */
+
+#contact {
+	margin-top: 100px;
 }
 
-#services-list li {
-	margin: 10px 0px;
+a.selected {
+  background-color:#1F75CC;
+  color:white;
+  z-index:100;
 }
 
-#description-container {
-	height: 410px;
-	width: 496px;
-	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
-	border-radius: 4px 4px 4px 4px;		
+.messagepop {
+  background-color:#FFFFFF;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  margin-top: 15px;
+  position:absolute;
+  text-align:left;
+  width:394px;
+  z-index:50;
+  padding: 25px 25px 20px;
 }
 
-#action-container {
-	height: 200px;
-	width: 235px;
-	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
-	border-radius: 4px 4px 4px 4px;		
+label {
+  display: block;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  text-indent: -15px;
 }
 
-#review-container {
-	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
-	border-radius: 4px 4px 4px 4px;
-	margin-top: 15px;
-	padding-bottom: 10px;
-}
-
-.provider-info {
-	padding: 10px 15px;
-}
-
-.provider-info h3 {
-	margin-top: 0px;
-}
-
-#provider-description {
-	padding-top: 10px;
-}
-
-#quote-call {
-	margin: 15px 20px;
-	width: 155px;
-	font-size: 16px;
-}
-
-.reviewer-pic {
-	height: 110px;
-	width: 110px;
-}
-
-.review-row-first {
-	padding: 10px;
-}
-
-.review-row {
-	padding: 10px;
-	border-top: 1px solid rgba(0,0,0,.1);
-}
-
-.reviewer-details {
-	margin: 5px 0px 0px 0px;
-}
-
-.reviewer-company {
-	margin: 0px;
-	padding: 0px;
-}
-
-.reviewer-name {
-
-}
-
-.service {
-	font-weight: bold;
-}
-
-.company-title {
-	margin-bottom: 0px;
-}
-
-.company-website {
-	padding-top: 5px;
-}
-
-.thumbsup {
-	height: 35px;
-	width: 35px;
-	margin: 20px 0px 10px 0px;
-}
-
-.upvote {
-	height: 15px;
-	width: 15px;
-	margin-top: -3px;
-}
-
-.review-date {
-	font-style: italic;
-}
-
-.review-details-container {
-	text-align: center;
-	padding-right:  30px;
-}
-
-.fb-icon {
-	height: 17px;
-	width: 17px;
-}
-
-.linkedin-icon {
-	height: 17px;
-	width: 17px;
-}
-
-.social-icon {
-	padding-right: 5px;
-}
-
-.social-icon-container {
-	margin-bottom: 5px;
-}
-
-.company-contact-info-container {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.company-contact-info {
-	margin-bottom: 0px;
-}
-
-.review-info-container {
-	height: 110px;
-	width: 150px;
-	padding: 10px;
-	
-	text-align: right;
-}
-
-.review-info-container p {
-	margin-bottom: 3px;
-}
-
-.thumb-counter {
-	font-size: 16px;
-	letter-spacing: 1px;
-}
-
-.thumbsup-top-page {
-	height: 35px;
-	width: 35px;
-	margin-right: -2px;	
-}
-
-.gray-dollar {
-	opacity: .5;
-}
-
-.upvote-container {
-	letter-spacing: 2px;
-	vertical-align: text-bottom;
+.messagepop p, .messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 0;
+  padding-bottom: 8px;
 }

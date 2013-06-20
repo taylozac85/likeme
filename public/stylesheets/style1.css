@@ -1,0 +1,196 @@
+#container {
+	width: 1020px;
+	margin: 0 auto;
+	padding: 30px 10px;
+}
+
+#logo-container {
+	height: 120px;
+	width: 235px;
+	padding: 50px 0px 10px 0px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	border-radius: 4px 4px 4px 4px;
+}
+
+#logo {
+
+}
+
+#services-container {
+	height: auto;
+	width: 235px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	border-radius: 4px 4px 4px 4px;	
+}
+
+#services-list {
+	padding: 10px;
+	font-size: 16px;
+}
+
+#services-list li {
+	margin: 10px 0px;
+}
+
+#description-container {
+	height: 410px;
+	width: 496px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	border-radius: 4px 4px 4px 4px;		
+}
+
+#action-container {
+	height: 200px;
+	width: 235px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	border-radius: 4px 4px 4px 4px;		
+}
+
+#review-container {
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	border-radius: 4px 4px 4px 4px;
+	margin-top: 15px;
+	padding-bottom: 10px;
+}
+
+.provider-info {
+	padding: 10px 15px;
+}
+
+.provider-info h3 {
+	margin-top: 0px;
+}
+
+#provider-description {
+	padding-top: 10px;
+}
+
+#quote-call {
+	margin: 15px 20px;
+	width: 155px;
+	font-size: 16px;
+}
+
+.reviewer-pic {
+	height: 110px;
+	width: 110px;
+}
+
+.review-row-first {
+	padding: 10px;
+}
+
+.review-row {
+	padding: 10px;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.reviewer-details {
+	margin: 5px 0px 0px 0px;
+}
+
+.reviewer-company {
+	margin: 0px;
+	padding: 0px;
+}
+
+.reviewer-name {
+
+}
+
+.service {
+	font-weight: bold;
+}
+
+.company-title {
+	margin-bottom: 0px;
+}
+
+.company-website {
+	padding-top: 5px;
+}
+
+.thumbsup {
+	height: 35px;
+	width: 35px;
+	margin: 20px 0px 10px 0px;
+}
+
+.upvote {
+	height: 15px;
+	width: 15px;
+	margin-top: -3px;
+}
+
+.review-date {
+	font-style: italic;
+}
+
+.review-details-container {
+	text-align: center;
+	padding-right:  30px;
+}
+
+.fb-icon {
+	height: 17px;
+	width: 17px;
+}
+
+.linkedin-icon {
+	height: 17px;
+	width: 17px;
+}
+
+.social-icon {
+	padding-right: 5px;
+}
+
+.social-icon-container {
+	margin-bottom: 5px;
+}
+
+.company-contact-info-container {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.company-contact-info {
+	margin-bottom: 0px;
+}
+
+.review-info-container {
+	height: 110px;
+	width: 150px;
+	padding: 10px;
+	
+	text-align: right;
+}
+
+.review-info-container p {
+	margin-bottom: 3px;
+}
+
+.thumb-counter {
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.thumbsup-top-page {
+	height: 35px;
+	width: 35px;
+	margin-right: -2px;	
+}
+
+.gray-dollar {
+	opacity: .5;
+}
+
+.upvote-container {
+	letter-spacing: 2px;
+	vertical-align: text-bottom;
+}
+
+.fb-likes {
+	
+}
