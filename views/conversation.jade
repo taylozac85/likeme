@@ -1,0 +1,57 @@
+extends layout
+
+block content
+	script(type="text/javascript", src="/javascripts/conversation.js")
+	div.body-container-convert
+		div.row-fluid
+			div.span7
+				div#conv-container-left
+					div#conv-header
+						h4 Conversation with Hans
+							p#conv-start-date started Jan 5
+					ul#conv-message-list-container
+						li.conv-message-list
+							div.row-fluid
+								div.span2
+									a(href="profile")
+										img.message-profile-pic(src="images/yogaowner2.png")
+								div.span10
+									p <strong>Sophia Blique</strong>
+									p.message-list-subject <strong>Subject:</strong> Yoga Retreat Bali
+									p.message-list-date Mar 16
+									div.message-content 
+										p Hans,
+										p Thank you very much for your recommendation! We have decided on Bali for our retreat. We are expecting 8-15 plus our 4 instructors.
+										p Would you like to meet for tea sometime this week? I would love to share our budding itinerary and hear your thoughts. So excited!!
+										p Ciao xx
+						li.conv-message-list
+							div.row-fluid
+								div.span2
+									a(href="profile")
+										img.message-profile-pic(src="images/yogaowner3.png")
+								div.span10
+									p <strong>Hans Serleig</strong>
+									p.message-list-subject <strong>Subject:</strong> Re: Yoga Retreat Bali
+									p.message-list-date Jan 12
+									div.message-content
+										p Hi Sophia,
+										p Wonderful! I am very happy to hear you are making Bali your destination. It was a life changing experience for me. I wish I could join!
+										p I would be delighted to meet for tea this week. How is Friday for you?
+										p Hans
+						li.conv-message-list#reply
+							div.row-fluid
+								div.span2
+									a(href="profile")
+										img.message-profile-pic(src="images/yogaowner2.png")
+								div.span10
+									p <strong>Sophia Blique</strong>
+									p.message-list-subject <strong>Subject:</strong> Re: Yoga Retreat Bali
+									label#conv-reply-message-label Message:
+									textarea#conv-compose-message-input(placeholder="Reply...")
+									div#compose-message-footer
+										button.btn.btn-primary Send
+			div.span5
+				div#conv-container-right
+					a(href="/compose")
+						p Compose message
+					a(href="/messages") Back to inbox

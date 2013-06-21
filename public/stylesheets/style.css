@@ -1,6 +1,14 @@
 .body-container {
 	width: 1020px;
-	margin: 70px auto;
+	min-height: 1000px;
+	margin: 70px auto;	
+}
+
+.body-container-convert {
+	width: 1020px;
+	padding-top: 30px;
+	margin: 44px auto 0px auto;
+	background-color: rgba(241, 241, 241, .8)
 }
 
 .bus-pic-container {
@@ -151,6 +159,7 @@
 }
 
 #my-profile-img {
+	display: none;
 	height: 40px;
 	margin-top: 2px;
 	width: auto;
@@ -159,11 +168,6 @@
 
 #my-profile-img:hover {
 	opacity: 1;
-}
-
-#my-account {
-	float: right;
-	margin: 12px 0px 0px 8px;
 }
 
 #search-container {
@@ -251,7 +255,7 @@
 #profile-content-container {
 	margin: 0px;
 	padding: 30px 10px 100px 10px;
-	background-color: rgba(235, 235, 235, 0.8);
+	background-color: rgba(241, 241, 241, 0.8);
 }
 
 #owner-profile-pic-container {
@@ -346,7 +350,7 @@
 	width: 1020px;
 	margin: 44px auto;
 	padding-bottom: 20px;
-	background-color: rgba(235, 235, 235, 0.8);
+	background-color: rgba(241, 241, 241, 0.8);
 }
 
 #disc-left {
@@ -424,40 +428,190 @@
 	border-radius: 4px 4px 4px 4px;	
 }
 
-/* TEST */
+/* Profile Message */
 
-#contact {
-	margin-top: 100px;
+#message-cancel {
+	margin-right: 10px;
 }
 
-a.selected {
-  background-color:#1F75CC;
-  color:white;
-  z-index:100;
+#message-input {
+	width: 97%;
+	height: 100px;
 }
 
-.messagepop {
-  background-color:#FFFFFF;
-  border:1px solid #999999;
-  cursor:default;
-  display:none;
-  margin-top: 15px;
-  position:absolute;
-  text-align:left;
-  width:394px;
-  z-index:50;
-  padding: 25px 25px 20px;
+#myModal {
+	width: 500px;
+	margin-left: -250px;
 }
 
-label {
-  display: block;
-  margin-bottom: 3px;
-  padding-left: 15px;
-  text-indent: -15px;
+#myModal label {
+	font-weight: bold;
 }
 
-.messagepop p, .messagepop.div {
-  border-bottom: 1px solid #EFEFEF;
-  margin: 8px 0;
-  padding-bottom: 8px;
+#mail-icon {
+	height: 30px;
+	width: auto;
+	margin-top: -2px;
 }
+
+#message-icon-container {
+	width: 45px;
+}
+
+#navbar-home {
+	padding-left: 10px;
+}
+
+/* Message Page */
+
+#message-page-container {
+	width: 1020px;
+	min-height: 2000px;
+	margin: 44px auto 0px auto;
+	padding-top: 20px;
+	position: relative;
+	background-color: rgba(241, 241, 241, 0.8);
+}
+
+li.message-list {
+	list-style: none;
+	padding: 10px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	margin-bottom: 1px;
+	position: relative;
+	background-color: white;
+}
+
+li.message-list:hover {
+	background-color: #FAFAFA;
+}
+
+img.message-profile-pic {
+	height: 60px;
+	width: 60px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	border-radius: 4px 4px 4px 4px;
+}
+
+#message-list-container {
+	margin: 15px 0px;
+}
+
+.message-list-subject {
+	margin-top: 10px;
+}
+
+.message-list-date {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#message-page-container-left {
+	width: 450px;
+	margin-left: 80px;
+}
+
+#message-list-header {
+	border-bottom: 1px solid #1B1B1B;
+}
+
+#message-list-header h3 {
+	margin-bottom: 5px;
+}
+
+#compose-message {
+	float: right;
+	font-size: 16px;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+
+a.message-list-to-link {
+	margin: 0px; 
+	display: block; 
+	width: 100%; 
+	height: 100%;
+}
+
+#compose-message-container {
+	display: block;
+	margin: 10px auto;
+	width: 500px;
+	background-color: #FFF;
+	padding: 15px;
+	overflow-y: auto;
+	border-radius: 4px 4px 4px 4px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#compose-message-container label {
+	font-weight: bold;
+}
+
+#compose-message-input {
+	width: 97%;
+	height: 100px;
+}
+
+#compose-message-footer {
+	margin: 10px 0px 5px 0px;
+	float: right;
+}
+
+#compose-message-cancel {
+	margin-right: 10px;
+}
+
+/* Conversation Page */
+
+#conv-container-left {
+	width: 500px;
+	margin-left: 80px;
+}
+
+#conv-container-right {
+	margin: 55px 0px 0px 30px;
+}
+
+
+#conv-header {
+	border-bottom: 1px solid #1B1B1B;
+}
+
+#conv-start-date {
+	font-size: 14px;
+	font-weight: normal;
+	float: right;
+}
+
+.conv-message-list {
+	list-style: none;
+	padding: 10px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	margin-bottom: 1px;
+	position: relative;
+	background-color: white;	
+}
+
+.conv-message-list#reply {
+	background-color: #F9FAFF;
+}
+
+#conv-message-list-container {
+	margin: 15px 0px;
+	display: block;
+	height: 450px;
+	overflow-y: auto;
+}
+
+label#conv-reply-message-label {
+	font-weight: bold;
+}
+
+#conv-compose-message-input {
+	width: 95%;
+	height: 100px;
+}
+
+

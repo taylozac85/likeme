@@ -1,0 +1,35 @@
+// 
+	Alternative message modal
+	script(type='text/javascript', src='/javascripts/profile.js')
+	script(src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false")
+	script(type='text/javascript', src='/javascripts/message.js')
+	div.messagepop.pop
+		form#new_message(method="post", action="/messages")
+			label <strong>Subject</strong>
+			input(type="text", size="30")
+			label <strong>Message</strong>
+			textarea(rows="5", cols="70", placeholder="")
+			div
+				a.close-message(href="#") Cancel
+				button.btn.btn-primary(type="submit") Send
+	.messagepop {
+		position: fixed;
+	  top: 150px;
+	  left: 500px;
+	  background-color: #FFFFFF;
+	  border:1px solid #999999;
+	  display: ;
+	  margin-top: 0px;
+	  width: 394px;
+	  z-index: 50;
+	  padding: 25px 25px 20px;
+	  box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+		border-radius: 4px 4px 4px 4px;	
+	}
+
+// 
+	Profile pic in navbar
+	div#my-profile-img-container
+		a(href="#")
+			img#my-profile-img(src="images/yoga1.jpg")
+

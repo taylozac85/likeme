@@ -1,15 +1,22 @@
 extends layout
 
-block content	
-	// script(type='text/javascript', src='/javascripts/profile.js')
-	// script(src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false")
+block content
+	div#myModal.modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
+		div.modal-body
+			button.close(type="button", data-dismiss="modal", aria-hidden="true") ×
+			label Subject:
+			input#message-subject-input(type="text")
+			label Message:
+			textarea#message-input
+		div.modal-footer
+			a#message-cancel(data-dismiss="modal", aria-hidden="true") Cancel
+			button.btn.btn-primary Send
 	div#profile-container
 		div#profile-background
 			div#profile-title-container
 				h2#profile-title Yoga to the People
 			button.btn.btn-primary#view-photos-btn View Photos
 			div#profile-location-container
-				// div#profile-location San Francisco
 		div#profile-content-container
 			div.row-fluid
 				div.span6
@@ -18,7 +25,7 @@ block content
 							img#owner-profile-pic(src="images/yogaowner1.png")
 						h4#owner-name Kathleen Karina
 						div
-							button.btn.btn-primary#message-btn Message
+							a#message-btn.btn.btn-primary(href="#myModal", role="button", data-toggle="modal") Message
 						div#company-info-container
 							p.company-info <strong>Location:</strong> San Francisco, CA
 							p.company-info <strong>Opened:</strong> 2004

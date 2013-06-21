@@ -2,12 +2,10 @@ extends layout
 
 block content
 	script(type='text/javascript', src='/javascripts/message.js')
-	p hey
-	p hey
 	div.messagepop.pop
 		form#new_message(method="post", action="/messages")
 			p <label for="email">Your email or name</label><input type="text" size="30" name="email" id="email" />
 			p <label for="body">Message</label><textarea rows="6" name="body" id="body" cols="35"></textarea>
 			p <input type="submit" value="Send Message" name="commit" id="message_submit"/> or <a class="close" href="/">Cancel</a>
 
-	a#contact(href="/contact") Contact Us
+	a#contact(href="#") Contact Us
