@@ -5,39 +5,63 @@ block content
 	div.body-container
 		div.row-fluid
 			div.span7
+				div#discover-bar-container
+					div.row-fluid
+						div.span4
+							p.search-label Type
+							form.form-search
+								input.input-medium(type="text", placeholder="Yoga")
+						div.span4
+							p.search-label Place
+							form.form-search
+								input.input-medium(type="text", placeholder="The World")
+						div.span4
+							a(href="discover")
+								button.btn.btn-primary#search-discover(type="sbumit") Discover
 				div.row-fluid
-					div.span6
-						div.bus-pic-container
-							div#bus-profile-pic1
-								a.bus-profile-link(href="/profile")
-									h3.bus-pic-label Yoga To The People
-									p.bus-pic-label-city San Francisco, CA
-						div.bus-pic-container
-							div#bus-profile-pic2
-								a.bus-profile-link(href="#")
-									h3.bus-pic-label Birkam Yoga
-									p.bus-pic-label-city Amsterdam, Netherlands
-						div.bus-pic-container
-							div#bus-profile-pic3
-								a.bus-profile-link(href="#")
-									h3.bus-pic-label Strala Yoga
-									p.bus-pic-label-city New York, NY
-					div.span6.bus-pic-column
-						div.bus-pic-container
-							div#bus-profile-pic4
-								a.bus-profile-link(href="#")
-									h3.bus-pic-label La Colombe
-									p.bus-pic-label-city San Francisco, CA
-						div.bus-pic-container
-							div#bus-profile-pic5
-								a.bus-profile-link(href="#")
-									h3.bus-pic-label Jane
-									p.bus-pic-label-city Princeton, NJ
-						div.bus-pic-container
-							div#bus-profile-pic6
-								a.bus-profile-link(href="#")
-									h3.bus-pic-label Cloth
-									p.bus-pic-label-city San Francisco, CA
+					div#search-results-container-inner
+						div.discover-pic-container
+							a(href="profile")
+								img.search-pic(src="images/yoga13-crop.png")
+								div.search-pic-label-container
+									div.search-pic-label
+										p.search-pic-name Yoga to the People
+										p.search-pic-location San Francisco
+						div.discover-pic-container#second
+							a(href="profile")
+								img.search-pic(src="images/yoga2-crop.png")
+								div.search-pic-label-container
+									div.search-pic-label
+										p.search-pic-name The Pad Studios
+										p.search-pic-location New York
+						div.discover-pic-container
+							a(href="profile")
+								img.search-pic(src="images/yoga11-crop.png")
+								div.search-pic-label-container
+									div.search-pic-label
+										p.search-pic-name Yoga to the People
+										p.search-pic-location San Francisco
+						div.discover-pic-container#second
+							a(href="profile")
+								img.search-pic(src="images/yoga4-crop.png")
+								div.search-pic-label-container
+									div.search-pic-label
+										p.search-pic-name The Pad Studios
+										p.search-pic-location New York
+						div.discover-pic-container
+							a(href="profile")
+								img.search-pic(src="images/yoga5-crop.png")
+								div.search-pic-label-container
+									div.search-pic-label
+										p.search-pic-name Satori Yoga
+										p.search-pic-location San Francisco
+						div.discover-pic-container#second
+							a(href="profile")
+								img.search-pic(src="images/yoga6-crop.png")
+								div.search-pic-label-container
+									div.search-pic-label
+										p.search-pic-name Swan Yoga
+										p.search-pic-location Sausalito
 			div.span5
 				div#qa-container
 					h3#qa-header Ask your community

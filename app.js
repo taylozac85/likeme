@@ -26,8 +26,8 @@ app.get('/', routes.index);
 app.get('/profile', function (req, res){
   res.render('profile');
 });
-app.get('/search', function (req, res){
-  res.render('search');
+app.get('/discover', function (req, res){
+  res.render('discover');
 });
 app.get('/conversation', function (req, res){
   res.render('conversation');
@@ -38,8 +38,8 @@ app.get('/compose', function (req, res){
 app.get('/messages', function (req, res){
   res.render('messages');
 });
-app.get('/disc', function (req, res){
-  res.render('disc');
+app.get('/discuss', function (req, res){
+  res.render('discuss');
 });
 app.get('/test', function (req, res){
   res.render('test');

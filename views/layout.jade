@@ -13,17 +13,24 @@ html
 					ul.nav
 						li
 							a#navbar-home(href="/") Home
+						li
+							a(href="discover") Discover
+						li
+							a(href="discover") Discuss
 					ul.nav.pull-right
-						li#message-icon-container
-							a(href="/messages")
-								img#mail-icon(src="images/mail-icon.png")
+						li
+							a#navbar-img-link(href="profile")
+								img#navbar-profile-img(src="images/yoga5-crop.png", title="Profile")
+						li
+							a#navbar-icon-link(href="/messages")
+								img#navbar-mail-icon(src="images/mail-icon.png", title="Messages")
 						li.dropdown
 							a.dropdown-toggle(href="#", data-toggle="dropdown") My Account <b class="caret"></b>
 							ul.dropdown-menu
 								li
-									a(href="/messages") Messages
-								li
 									a(href="/profile") My Profile
+								li
+									a(href="/messages") Messages
 								li
 									a(href="#") Log out
 		block content
