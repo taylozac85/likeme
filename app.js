@@ -38,6 +38,9 @@ app.get('/compose', function (req, res){
 app.get('/messages', function (req, res){
   res.render('messages');
 });
+app.get('/discussion', function (req, res){
+  res.render('discussion');
+});
 app.get('/discuss', function (req, res){
   res.render('discuss');
 });

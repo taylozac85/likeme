@@ -5,9 +5,9 @@
 }
 
 .body-container-gray {
-	width: 1010px;
+	width: 1020px;
 	margin: 44px auto 0px auto;
-	padding: 30px 10px;
+	padding: 30px 5px;
 	background-color: rgba(247, 247, 247, .8)
 }
 
@@ -229,150 +229,6 @@
 	font-size: 16px;
 	margin: 5px 0px 0px 10px;
 	float: left;
-}
-
-/* Profile */
-
-#profile-container {
-	width: 1020px;
-	height: 400px;
-	margin: 44px auto;
-	position: relative;
-}
-
-#profile-background {
-	background: url('/images/yoga2.jpg') no-repeat center center;
-	background-size: cover;
-		-webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	height: 100%;
-}
-
-#profile-title-container {
-	background-color: rgba(27,27,27,.35);
-	display: inline-block;
-	float: left;
-	margin-top: 20px;
-}
-
-#profile-title {
-	color: white;
-	margin: 0px 5px;
-	padding: 3px 0px;
-}
-
-#view-photos-btn {
-	float: right;
-	margin: 20px 10px 0px 0px;
-	padding: 14px 42px;
-	font-size: 18px;
-}
-
-#profile-location-container {
-	background-color: rgba(27,27,27,.2);
-	display: inline-block;
-	position: absolute;
-	bottom: 15px;
-	right: 15px;
-}
-
-#profile-location {
-	font-size: 24px;
-	font-style: italic;
-	color: white;
-}
-
-#profile-content-container {
-	margin: 0px;
-	padding: 30px 10px 100px 10px;
-	background-color: rgba(241, 241, 241, 0.8);
-}
-
-#owner-profile-pic-container {
-	height: 150px;
-	width: 150px;
-	overflow: hidden;
-	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
-	border-radius: 4px 4px 4px 4px;
-	float: left;
-	margin-bottom: 15px;
-}
-
-#owner-name {
-	display: inline-block;
-	margin: 0px 0px 5px 10px;
-}
-
-#message-btn {
-	margin: 5px 0px 0px 10px;
-	padding: 6px 18px;
-}
-
-#map-container {
-	float: right;
-	height: 170px;
-	width: 170px;
-	overflow: hidden;
-	margin: 0px 10px 0px 0px;
-}
-
-#company-info-container {
-	clear: both;
-	font-size: 15px;
-}
-
-.company-info {
-	margin-bottom: 10px;
-}
-
-#profile-bio-container {
-	padding-right: 20px;
-}
-
-.qa-profile-pic {
-	height: 60px;
-	width: 60px;
-	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
-	border-radius: 4px 4px 4px 4px;
-}
-
-.qa-profile-thread-container {
-	border: 1px solid #1B1B1B;
-	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
-	border-radius: 4px 4px 4px 4px;		
-	padding: 10px 10px 40px 10px;
-	position: relative;
-	margin-bottom: 20px;
-}
-
-.qa-profile-q-container {
-	border-bottom: 1px solid gray;
-	padding-bottom: 10px;
-}
-
-.qa-profile-a-container {
-	border-bottom: 1px solid gray;
-	padding: 0px 0px 10px 20px;
-	margin-top: 10px;
-}
-
-.view-convo-container {
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
-}
-
-#profile-board {
-	border: 1px solid blue;
-	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
-	border-radius: 4px 4px 4px 4px;
-	padding: 10px;
-	margin-bottom: 20px;
-}
-
-#profile-board-header {
-	font-size: 20px;
 }
 
 /* Discussion */
@@ -736,3 +592,170 @@ label#conv-reply-message-label {
 .discover-pic-container#second {
 	margin-right: 0px;
 }
+
+/******* Profile2 ***********/
+
+#profile2-background-container {
+	margin: 0px;
+	position: relative;
+}
+
+#profile2-background {
+	margin-top: -30px;	
+}
+
+#view-photos-link {
+	position: absolute;
+	right: 15px;
+	font-size: 16px;
+}
+
+.profile2-pic-label-container {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	background-color: rgba(27,27,27,.85);
+	color: white;
+}
+
+.profile2-pic-name {
+	margin: 0px;
+	padding: 8px 10px;
+	display: inline-block;
+}
+
+#view-photos-container {
+	height: 56px;
+	background-color: rgba(245,245,245,.8);
+	padding: 0px 20px;
+}
+
+#view-photos-container:hover {
+	background-color: rgba(245,245,245,.7);
+	text-decoration: none;
+}
+
+#view-photos {
+	margin-top: 18px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#profile2-content-container {
+	margin: 20px 10px 0px 10px;
+	padding: 10px;
+}
+
+#profile2-person-pic {
+	height: 150px;
+	width: 150px;
+	border: 5px solid gray;
+	border-radius: 4px;
+}
+
+#profile2-person-name {
+	margin: 4px 0px 5px 5px;
+	font-size: 16px;
+}
+
+#profile2-location {
+	margin: 5px 5px;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#message-btn {
+	margin: 10px 0px 0px 0px;
+	padding: 12px 48px;
+	font-size: 15px;
+}
+
+#profile2-content-container-left {
+	padding-right: 0px;
+	border-right: 0px solid gray;
+}
+
+#profile2-content-container-right {
+	margin-left: 17px;
+	padding-left: 0px;
+}
+
+#profile2-content-container-border-set {
+	margin-left: -17px;
+	border-left: 0px solid gray;
+}
+
+#profile2-about {
+	margin: 20px 0px 0px 0px;
+	padding: 10px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.2);	
+	border-radius: 4px;
+}
+
+#profile2-about-header {
+	margin-top: 0px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+#profile2-discussion-header-container {
+	text-align: center;
+}
+
+#profile2-discussion-header {
+	margin: -5px 0px 10px 0px;
+}
+
+.qa-profile2-pic {
+	height: 60px;
+	width: 60px;
+	border: 2px solid gray;
+	border-radius: 3px;
+}
+
+.qa-profile2-thread-container {
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.2);	
+	border-radius: 4px;
+	padding: 10px 10px 40px 10px;
+	position: relative;
+}
+
+.qa-profile2-q-container {
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	padding-bottom: 10px;
+}
+
+.qa-profile2-a-container {
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	padding: 0px 0px 10px 20px;
+	margin-top: 10px;
+}
+
+.qa-profile2-details {
+	margin: -2px 0px 5px 0px;
+}
+
+.qa-profile2-content {
+	margin-bottom: 0px;
+}
+
+p.qa-profile2-content-lead {
+	font-weight: bold;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+.qa-profile2-content-container {
+	margin-left: -4px;
+}
+
+.view-convo-container {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+/* Discuss Page */
+
