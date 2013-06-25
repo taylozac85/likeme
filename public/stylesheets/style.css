@@ -1,7 +1,8 @@
 .body-container {
-	width: 1010px;
+	width: 1020px;
 	margin: 44px auto 0px auto;
-	padding: 30px 10px;
+	padding: 30px 0px;
+	background-color: rgba(247, 247, 247, .8)
 }
 
 .body-container-gray {
@@ -759,3 +760,120 @@ p.qa-profile2-content-lead {
 
 /* Discuss Page */
 
+#discuss-header-container {
+	text-align: center;
+}
+
+#discuss-header {
+	margin-top: -5px;
+}
+
+#discuss-all-thread-container {
+	margin: 15px 30px;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 4px;
+	padding: 5px 15px 15px 15px;
+}
+
+#discuss-thread-container {
+	padding: 12px 0px 12px 0px;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.discuss-profile-pic {
+	height: 50px;
+	width: 50px;
+	border: 3px solid gray;
+	border-radius: 4px;	
+}
+
+.discuss-content-container {
+	margin-left: -20px;	
+}
+
+.discuss-profile-details {
+	margin-top: 5px;
+	line-height: 18px;
+}
+
+.discuss-content {	
+	margin-top: -1px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#discuss-container-right {
+	width: 35%;
+}
+
+#discuss-container-left {
+	width: 62%;
+	border-right: 1px solid gray;
+}
+
+#discuss-community-container {
+	margin: 0px 20px 15px 0px;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 4px;
+	padding: 5px 15px 5px 15px;
+}
+
+#discuss-community-header {
+	margin: 0px 0px 5px 0px;
+}
+
+#discuss-community-type-label {
+	font-weight: bold;
+	display: inline-block;
+}
+
+#discuss-community-input-type {
+	margin-left: 14px;
+	display: inline-block;
+}
+
+#discuss-community-input-place {
+	margin-left: 10px;
+	display: inline-block;
+}
+
+#discuss-question-container {
+	margin: 20px 20px 0px 0px;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 4px;
+	padding: 5px 15px 15px 15px;
+	overflow: hidden;
+}
+
+#discuss-question-header-container {
+	text-align: center;
+}
+
+#discuss-question-header {
+	margin: 0px 0px 5px 0px;
+}
+
+#discuss-question-input {
+	width: 95%;
+	margin: 5px 0px;
+}
+
+#discuss-question-submit-btn {
+	float: right;
+	margin: 10px 2px 0px 0px;	
+}
+
+#discuss-my-discussions-container {
+	margin: 0px 20px 15px 0px;
+	padding: 5px 15px 15px 15px;
+}
+
+#discuss-my-discussions-header-container {
+	text-align: center;
+}
+
+#discuss-community-tags {
+	font-weight: bold;
+	font-size: 14px;
+}

@@ -1,5 +1,130 @@
 extends layout
 
 block content
-	div.body-container-gray
-		
+	div.body-container
+		div.row-fluid
+			div.span8#discuss-container-left
+				div#discuss-header-container
+					h2#discuss-header Discussion Board
+				div#discuss-all-thread-container
+					div#discuss-thread-container
+						div.row-fluid
+							div.span2
+								a(href="#")
+									img.discuss-profile-pic(src="images/yogaowner4.png")
+							div.span10
+								div.discuss-content-container
+									a(href="discuss")
+										p.discuss-content What are the best destinations in Asia for a retreat?
+					div#discuss-thread-container
+						div.row-fluid
+							div.span2
+								a(href="#")
+									img.discuss-profile-pic(src="images/yogaowner1.png")
+							div.span10
+								div.discuss-content-container
+									a(href="discuss")
+										p.discuss-content Has anyone participated in Yoga Community SF? I am deciding whether to apply this year and would love to hear others' opinion.
+					div#discuss-thread-container
+						div.row-fluid
+							div.span2
+								a(href="#")
+									img.discuss-profile-pic(src="images/yogaowner3.png")
+							div.span10
+								div.discuss-content-container
+									a(href="discuss")
+										p.discuss-content Is yoga practiced in France with as much enthusiasm as in the United States?
+					div#discuss-thread-container
+						div.row-fluid
+							div.span2
+								a(href="#")
+									img.discuss-profile-pic(src="images/yogaowner2.png")
+							div.span10
+								div.discuss-content-container
+									a(href="discuss")
+										p.discuss-content We are planning a retreat in Northern India in March. Any recommendations for location? We will 10-15 people and plan to stay for one week.
+					div#discuss-thread-container
+						div.row-fluid
+							div.span2
+								a(href="#")
+									img.discuss-profile-pic(src="images/yogaowner5.png")
+										//a(href="profile") Tatiana Jorges
+							div.span10
+								div.discuss-content-container
+									a(href="discuss")
+										p.discuss-content How many advanced classes do you offer and how many beginner? We have more advanced than beginner and are having a hard time filling them.
+					div#discuss-thread-container
+						div.row-fluid
+							div.span2
+								a(href="#")
+									img.discuss-profile-pic(src="images/yogaowner6.png")
+							div.span10
+								div.discuss-content-container
+									a(href="discuss")
+										p.discuss-content How challenging is it to beomce a Certified Puma Yoga Teacher (CPYT)?
+					div#discuss-thread-container
+						div.row-fluid
+							div.span2
+								a(href="#")
+									img.discuss-profile-pic(src="images/yogaowner7.png")
+										//a(href="profile") Tatiana Jorges
+							div.span10
+								div.discuss-content-container
+									a(href="discuss")
+										p.discuss-content How do I get more people to know that we're here and what yoga can do for them?
+					div#discuss-thread-container
+						div.row-fluid
+							div.span2
+								a(href="#")
+									img.discuss-profile-pic(src="images/yogaowner8.png")
+							div.span10
+								div.discuss-content-container
+									a(href="discuss")
+										p.discuss-content What effective ways have owners been able to find quality teachers?
+					div#discuss-thread-container
+						div.row-fluid
+							div.span2
+								a(href="#")
+									img.discuss-profile-pic(src="images/yogaowner9.png")
+										//a(href="profile") Tatiana Jorges
+							div.span10
+								div.discuss-content-container
+									a(href="discuss")
+										p.discuss-content What times have been the best for holding classes? I find a huge difference in attendance based on class time. Curious what others have experienced.
+					div#discuss-thread-container
+						div.row-fluid
+							div.span2
+								a(href="#")
+									img.discuss-profile-pic(src="images/yogaowner10.png")
+							div.span10
+								div.discuss-content-container
+									a(href="discuss")
+										p.discuss-content What are the best ways to organize a referal system? I am considering offereing a discount to current students that bring in referals.
+			div.span4#discuss-container-right
+				div#discuss-community-container
+					div
+						h3#discuss-community-header Community Tags:
+						p#discuss-community-tags #Yoga #San Francisco <a href="#">change</a>
+						//
+							p#discuss-community-type-label Type:
+								form.form-search#discuss-community-input-type
+									input.input-medium(type="text", placeholder="Yoga")
+							p#discuss-community-type-label Place:
+							form.form-search#discuss-community-input-place
+								input.input-medium(type="text", placeholder="San Francisco")
+				div#discuss-question-container
+					div#discuss-question-header-container
+						h3#discuss-question-header Ask your community
+						textarea#discuss-question-input(rows="4", placeholder="Type question here...")
+						button#discuss-question-submit-btn.btn.btn-primary(type="submit") Post Question
+				div#discuss-my-discussions-container
+					div#discuss-my-discussions-header-container
+						h3#discuss-my-discussions-header My Discussions
+					a(href="#") 
+						p What are the best ways to organize a referal system? I am considering offereing a discount to current students that bring in referals.
+					a(href="#") 
+						p What times have been the best for holding classes? I find a huge difference in attendance based on class time. Curious what others have experienced.
+					a(href="#") 
+						p How do I get more people to know that we're here and what yoga can do for them?
+
+
