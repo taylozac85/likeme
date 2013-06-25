@@ -232,90 +232,6 @@
 	float: left;
 }
 
-/* Discussion */
-
-#disc-body-container {
-	width: 1020px;
-	margin: 44px auto;
-	padding-bottom: 20px;
-	background-color: rgba(241, 241, 241, 0.8);
-}
-
-#disc-left {
-	border-right: 1px solid #1B1B1B;
-	width: 66%;
-}
-
-#disc-header-container {
-	margin: 25px 20px 30px 15px;
-	padding-bottom: 20px;
-	border-bottom: 3px solid #1B1B1B;
-}
-
-#disc-header {
-	font-size: 28px;
-	line-height: 32px;
-	margin-bottom: 20px;
-}
-
-#disc-header-profile-container {
-	margin: 0px 0px 0px 15px;
-}
-
-.disc-profile-details {
-	margin-left: -20px;
-}
-
-.disc-profile-a-container {
-	margin: 0px 20px 15px 30px;
-	border-bottom: 1px solid #1B1B1B;
-	padding-bottom: 5px;
-}
-
-#disc-right {
-	margin-left: 0px;
-	width: 34%;
-	padding-right: 10px;
-}
-
-#disc-right-container {
-	margin: 25px 10px 30px 20px;
-}
-
-#com-header {
-	margin-bottom: 0px;
-}
-
-.com-tags {
-	font-weight: bold;
-	margin: 0px;
-	color: #1B1B1B;
-}
-
-#disc-q-link-container {
-	margin-top: 10px;
-}
-
-#disc-bus-pics-container {
-	margin-top: 10px;
-	text-align: center;
-	margin-right: -15px;
-}
-
-.disc-bus-pic-container {
-	height: 135px;
-	width: 135px;
-	overflow: hidden;
-	display: inline-block;
-	margin: 15px 15px 0px 0px;
-
-}
-
-.disc-bus-pic-container img {
-	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
-	border-radius: 4px 4px 4px 4px;	
-}
-
 /* Profile Message */
 
 #message-cancel {
@@ -708,16 +624,24 @@ label#conv-reply-message-label {
 	margin: -5px 0px 10px 0px;
 }
 
+.profile2-thread-container {
+	margin-bottom: 20px;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 4px;
+	padding: 10px 10px 40px 10px;
+	position: relative;
+}
+
 .qa-profile2-pic {
 	height: 60px;
 	width: 60px;
 	border: 2px solid gray;
-	border-radius: 3px;
+	border-radius: 4px;
 }
 
 .qa-profile2-thread-container {
 	margin-bottom: 20px;
-	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.2);	
+	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 4px;
 	padding: 10px 10px 40px 10px;
 	position: relative;
@@ -758,6 +682,142 @@ p.qa-profile2-content-lead {
 	right: 10px;
 }
 
+/* Discussion Page */
+
+#disc-left {
+	margin: 0px 10px 0px 10px;
+	border-right: 1px solid gray;
+	width: 65%;
+}
+
+#disc-header-container {
+	margin: -5px 20px 20px 15px;
+	padding-bottom: 15px;
+	border-bottom: 3px solid gray;
+}
+
+#disc-header {
+	font-size: 28px;
+	line-height: 32px;
+	margin-bottom: 15px;
+}
+
+#disc-header-profile-container {
+	margin: 0px 0px 0px 15px;
+}
+
+.disc-profile-details {
+	margin-left: -25px;
+}
+
+.disc-profile-a-container {
+	margin: 0px 20px 15px 30px;
+	border-bottom: 1px solid gray;
+	padding-bottom: 5px;
+}
+
+.discussion-a-content {
+	margin-bottom: 5px;
+}
+
+#discussion-comment-input {
+	width: 97%;
+}
+
+#discussion-comment-submit-btn {
+	float: right;
+	margin: 5px 0px 10px 0px;
+}
+
+#discussion-comment-submit-btn-top {
+	float: right;
+	margin: 10px 0px 0px 0px;	
+}
+
+#disc-right {
+	margin: -7px 5px 0px 10px;
+	width: 31%;
+	padding-right: 10px;
+}
+
+#com-header {
+	margin-bottom: 0px;
+}
+
+.com-tags {
+	font-weight: bold;
+	margin: 0px;
+}
+
+#disc-q-link-container {
+	margin-top: 10px;
+}
+
+.disc-profile-pic {
+	height: 60px;
+	width: 60px;
+	border: 3px solid gray;
+	border-radius: 4px;
+}
+
+#discussion-question-container {
+	margin: 20px 0px 0px 0px;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 4px;
+	padding: 5px 15px 15px 15px;
+	overflow: hidden;
+}
+
+#discussion-question-header-container {
+	text-align: center;
+}
+
+#discussion-question-header {
+	margin: 0px 0px 5px 0px;
+}
+
+#discussion-question-input {
+	width: 95%;
+	margin: 5px 0px;
+}
+
+#discussion-question-submit-btn {
+	float: right;
+	margin: 10px 0px 0px 0px;	
+}
+
+#discussion-community-tags-container {
+	text-align: left;
+}
+
+#discussion-community-tags {
+	font-weight: bold;
+}
+
+/* 
+
+#disc-bus-pics-container {
+	margin-top: 10px;
+	text-align: center;
+	margin-right: -15px;
+}
+
+.disc-bus-pic-container {
+	height: 135px;
+	width: 135px;
+	overflow: hidden;
+	display: inline-block;
+	margin: 15px 15px 0px 0px;
+
+}
+
+.disc-bus-pic-container img {
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.1);
+	border-radius: 4px 4px 4px 4px;	
+}
+
+*/
+
 /* Discuss Page */
 
 #discuss-header-container {
@@ -784,7 +844,7 @@ p.qa-profile2-content-lead {
 	height: 50px;
 	width: 50px;
 	border: 3px solid gray;
-	border-radius: 4px;	
+	border-radius: 4px;
 }
 
 .discuss-content-container {
