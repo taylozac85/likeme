@@ -254,6 +254,44 @@
 	font-weight: bold;
 }
 
+/* Invite Modal */
+
+#invite-content-container {
+	margin: 0px 0px 10px 0px;
+}
+
+#inviteModal {
+	width: 500px;
+	margin-left: -250px;
+}
+
+#inviteModal label {
+	font-weight: bold;
+}
+
+.invite-input {
+	width: 200px;
+}
+
+/* Login Modal */
+
+#login-content-container {
+	margin: 0px 0px 10px 0px;
+}
+
+#loginModal {
+	width: 300px;
+	margin-left: -150px;
+}
+
+#loginModal label {
+	font-weight: bold;
+}
+
+.login-input {
+	width: 200px;
+}
+
 /* Message Page */
 
 #message-page-container {
@@ -1002,4 +1040,55 @@ p.qa-profile2-content-lead {
 #discuss-community-tags {
 	font-weight: bold;
 	font-size: 14px;
+}
+
+/* Landing Page */
+
+img.landing-bg {
+	min-height: 100%;
+	min-width: 1024px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#landing-page-intro-wrap {
+	position: relative;
+	margin: 200px auto;
+	/* position: absolute;
+	top: 200px;
+	left: 200px; */
+	width: 400px;
+	padding: 20px;
+	background: rgba(247,247,247,.95);
+	border-radius: 4px;
+	box-shadow: 0 0 20px #000;
+}
+
+.btn.btn-primary.landing-action-btn {
+	display: inline-block;
+	font-size: 16px;
+	padding: 8px 24px;
+	margin-right: 10px;
+}
+
+.landing-action-btn-or {
+	display: inline-block;
+	margin-right: 10px;	
+}
+
+#landing-header {
+	margin: -5px 0px 5px 0px;
+}
+
+#landing-sub-header {
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0px 0px 20px 0px;
+}
+
+#landing-preview-btn {
+	margin-right: 10px;
 }

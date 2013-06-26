@@ -1,1 +1,45 @@
-div hey
+doctype 5
+html
+	head
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+		script(src='/bootstrap/js/bootstrap.min.js')
+	body
+		img.landing-bg(src="images/yoga-full-1.png")
+		div#landing-page-intro-wrap
+			h2#landing-header Welcome to Name
+			p#landing-sub-header A visually rich network for passion business owners
+			div
+				a#invite-btn.btn.btn-primary.landing-action-btn(href="#inviteModal", role="button", data-toggle="modal") Request an invite
+				p.landing-action-btn-or or
+				a#login-btn.btn.btn-primary.landing-action-btn(href="##loginModal", role="button", data-toggle="modal") Log in
+		div#inviteModal.modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="inviteModalLabel", aria-hidden="true")
+			div.modal-body
+				button.close(type="button", data-dismiss="modal", aria-hidden="true") ×
+				div#invite-content-container
+					p Thanks for your interest in Name! 
+					p We are currently in beta and would be delighted for you to start using Name. The site is currently for business owners only.
+					p Please fill in the information below and we will get back to you very promptly.
+				label Full name:
+				input.invite-input(type="text")
+				label E-mail:
+				input.invite-input(type="text")
+				label Business Name:
+				input.invite-input(type="text")
+			div.modal-footer
+				a#message-cancel(data-dismiss="modal", aria-hidden="true") Cancel
+				button.btn.btn-primary Request Invite
+		div#loginModal.modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="loginModalLabel", aria-hidden="true")
+			div.modal-body
+				button.close(type="button", data-dismiss="modal", aria-hidden="true") ×
+				label E-mail:
+				input.login-input(type="text")
+				label Password:
+				input.login-input(type="text")
+			div.modal-footer
+				a(href="/", title="Preview the full site")
+					button.btn.btn-info#landing-preview-btn Preview
+				a(href="my-profile", title="Login to create or edit your profile")
+					button.btn.btn-primary#landing-login-btn Log in
