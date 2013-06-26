@@ -23,6 +23,9 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+app.get('/landing-page', function (req, res){
+  res.render('landing-page');
+});
 app.get('/profile', function (req, res){
   res.render('profile');
 });
