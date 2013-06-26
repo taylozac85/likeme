@@ -1,0 +1,32 @@
+extends layout
+
+block content
+	div.body-container
+		div#edit-page-container
+			div.edit-content-container
+				p.edit-label Name:
+				p.edit-content Tatiana Jorges
+			div.edit-content-container
+				p.edit-label Business Name:
+				p.edit-content Yoga to the People
+			div.edit-content-container-input
+				p.edit-label Location:
+				input.input-medium.edit-input(type="text", placeholder="Enter city here...")
+			div.edit-content-container-input
+				p.edit-label Business Type:
+				input.input-medium.edit-input(type="text", placeholder="Yoga")
+			div.edit-content-container-input
+				p.edit-label Business Picture:
+				a.edit-bus-photo(href="#") Upload photo
+				p.edit-label-sub (Size: 1010 x 455)
+			div.edit-content-container-input
+				p.edit-label Profile Picture:
+				a.edit-bus-photo(href="#") Upload photo
+				p.edit-label-sub (Size: 200 x 200)
+			div.edit-content-container-input
+				p.edit-label-about About:
+				textarea.edit-input-about(rows="5", placeholder="Enter a short bio...")
+			p.edit-update-line-set
+				a(href="my-profile")
+					button.btn.btn-primary#edit-update-profile-btn Update Profile
+				button.btn(type="button") Cancel

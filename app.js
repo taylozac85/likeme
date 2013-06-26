@@ -26,6 +26,12 @@ app.get('/', routes.index);
 app.get('/profile', function (req, res){
   res.render('profile');
 });
+app.get('/my-profile', function (req, res){
+  res.render('my-profile');
+});
+app.get('/edit-profile', function (req, res){
+  res.render('edit-profile');
+});
 app.get('/discover', function (req, res){
   res.render('discover');
 });

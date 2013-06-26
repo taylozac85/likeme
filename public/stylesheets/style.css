@@ -1,12 +1,14 @@
 .body-container {
 	width: 1020px;
+	min-height: 650px;
 	margin: 44px auto 0px auto;
 	padding: 30px 0px;
 	background-color: rgba(247, 247, 247, .8)
 }
 
 .body-container-gray {
-	width: 1020px;
+	width: 1010px;
+	min-height: 650px;
 	margin: 44px auto 0px auto;
 	padding: 30px 5px;
 	background-color: rgba(247, 247, 247, .8)
@@ -510,7 +512,7 @@ label#conv-reply-message-label {
 	margin-right: 0px;
 }
 
-/******* Profile2 ***********/
+/* Profile2 Page */
 
 #profile2-background-container {
 	margin: 0px;
@@ -571,12 +573,12 @@ label#conv-reply-message-label {
 }
 
 #profile2-person-name {
-	margin: 4px 0px 5px 5px;
+	margin: 3px 0px 5px 10px;
 	font-size: 16px;
 }
 
 #profile2-location {
-	margin: 5px 5px;
+	margin: 5px 10px;
 	font-size: 16px;
 	font-style: italic;
 	font-weight: bold;
@@ -680,6 +682,70 @@ p.qa-profile2-content-lead {
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
+}
+
+/* My Profile page */
+
+#edit-profile {
+	position: absolute;
+	margin-top: -20px;
+	top: 5px;
+	right: 10px;
+	font-size: 16px;
+	padding: 8px 24px;
+}
+
+#edit-profile-midpage {
+	font-size: 16px;
+	padding: 8px 24px;
+	margin: 10px 0px 0px 10px;	
+}
+
+/* Edit Profile Page */
+
+#edit-page-container {
+	padding: 0px 20px;
+}
+
+.edit-label {
+	font-weight: bold;
+	display: inline-block;
+}
+
+.edit-content {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.edit-content-container-input {
+	line-height: 35px;
+}
+
+.input-medium.edit-input {
+	margin: 0px 0px 0px 10px;
+}
+
+.edit-label-sub {
+	margin: -22px 0px 0px 0px;
+}
+
+.edit-bus-photo {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.edit-label-about {
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.edit-input-about {
+	width: 400px;
+	margin-bottom: 15px;
+}
+
+#edit-update-profile-btn {
+	margin: 0px 5px 0px 0px;
 }
 
 /* Discussion Page */
