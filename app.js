@@ -29,6 +29,9 @@ app.get('/landing-page', function (req, res){
 app.get('/profile', function (req, res){
   res.render('profile');
 });
+app.get('/home', function (req, res){
+  res.render('index');
+});
 app.get('/my-profile', function (req, res){
   res.render('my-profile');
 });

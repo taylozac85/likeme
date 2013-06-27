@@ -1,86 +1,73 @@
 extends layout
 
 block content
-	script(type='text/javascript', src='/javascripts/homepage.js')
 	div.body-container
 		div.row-fluid
-			div.span7
-				div#discover-bar-container
-					div.row-fluid
-						div.span4
-							p.search-label Type
-							form.form-search
-								input.input-medium(type="text", placeholder="Yoga")
-						div.span4
-							p.search-label Place
-							form.form-search
-								input.input-medium(type="text", placeholder="The World")
-						div.span4
-							a(href="discover")
-								button.btn.btn-primary#search-discover(type="sbumit") Discover
-				div.row-fluid
-					div#search-results-container-inner
-						div.discover-pic-container
-							a(href="profile")
-								img.search-pic(src="images/yoga13-crop.png")
-								div.search-pic-label-container
-									div.search-pic-label
-										p.search-pic-name Yoga to the People
-										p.search-pic-location San Francisco
-						div.discover-pic-container#second
-							a(href="profile")
-								img.search-pic(src="images/yoga2-crop.png")
-								div.search-pic-label-container
-									div.search-pic-label
-										p.search-pic-name The Pad Studios
-										p.search-pic-location New York
-						div.discover-pic-container
-							a(href="profile")
-								img.search-pic(src="images/yoga11-crop.png")
-								div.search-pic-label-container
-									div.search-pic-label
-										p.search-pic-name Yoga to the People
-										p.search-pic-location San Francisco
-						div.discover-pic-container#second
-							a(href="profile")
-								img.search-pic(src="images/yoga4-crop.png")
-								div.search-pic-label-container
-									div.search-pic-label
-										p.search-pic-name The Pad Studios
-										p.search-pic-location New York
-						div.discover-pic-container
-							a(href="profile")
-								img.search-pic(src="images/yoga5-crop.png")
-								div.search-pic-label-container
-									div.search-pic-label
-										p.search-pic-name Satori Yoga
-										p.search-pic-location San Francisco
-						div.discover-pic-container#second
-							a(href="profile")
-								img.search-pic(src="images/yoga6-crop.png")
-								div.search-pic-label-container
-									div.search-pic-label
-										p.search-pic-name Swan Yoga
-										p.search-pic-location Sausalito
-			div.span5
-				div#qa-container
-					h3#qa-header Ask your community
-					textarea#qa-input(rows="3", placeholder="Type question here")
-					div#tag-container
-						h4#tags-header Tags
-						label.checkbox.inline Yoga
-							input(type="checkbox", value="", checked)
-						label.checkbox.inline San Francisco
-							input(type="checkbox", value="", checked)
-						form.form-inline#tags-other
-							label.checkbox
-								input(type="checkbox", name="keywords", value="")
-							input(type="text", name="keywords_other_option", value="", placeholder="Other")
-					button#qa-submit-btn.btn.btn-primary(type="submit") Ask Question
-				div#qa-feed-container
-					div.qa-links
-						a What is the most challenging thing about opening a yoga studio?
-					div.qa-links
-						a What are the best locations for yoga retreats in California?
-					div.qa-links
-						a What adjustments are you making to your business in preparation for the America's Cup?
+			div.span8#home-container-left
+				img.home-img(src="images/yoga2.jpg")
+				img.home-img(src="images/yoga7.jpg")
+				img.home-img(src="images/yoga8.jpg")
+				img.home-img(src="images/yoga9.jpg")
+				img.home-img(src="images/yoga11.jpg")
+				img.home-img(src="images/yoga12.jpg")
+				img.home-img(src="images/yoga13.jpg")
+				img.home-img(src="images/yoga4.jpg")
+			div.span4#home-container-right
+				div#home-discussion-header-container
+					h3 Discussion Board
+					div#home-discussion-link-container
+						div.home-discuss-thread-container
+							div.row-fluid
+								div.span3
+									a(href="discussion")
+										img.home-profile-pic(src="images/yogaowner4.png")
+								div.span9
+									div.home-discuss-content-container
+										a(href="discussion")
+											p.home-discuss-content What are the best destinations in Asia for a retreat?
+						div.home-discuss-thread-container
+							div.row-fluid
+								div.span3
+									a(href="discussion")
+										img.home-profile-pic(src="images/yogaowner3.png")
+								div.span9
+									div.home-discuss-content-container
+										a(href="discussion")
+											p.home-discuss-content Is yoga practiced in France with as much enthusiasm as in the United...?
+						div.home-discuss-thread-container
+							div.row-fluid
+								div.span3
+									a(href="discussion")
+										img.home-profile-pic(src="images/yogaowner6.png")
+								div.span9
+									div.home-discuss-content-container
+										a(href="discussion")
+											p.home-discuss-content How challenging is it to beomce a Certified Puma Yoga Teacher (CPYT)?
+						div.home-discuss-thread-container
+							div.row-fluid
+								div.span3
+									a(href="discussion")
+										img.home-profile-pic(src="images/yogaowner5.png")
+								div.span9
+									div.home-discuss-content-container
+										a(href="discussion")
+											p.home-discuss-content How many advanced classes do you offer and how many beginner? We...
+						div.home-discuss-thread-container
+							div.row-fluid
+								div.span3
+									a(href="discussion")
+										img.home-profile-pic(src="images/yogaowner2.png")
+								div.span9
+									div.home-discuss-content-container
+										a(href="discussion")
+											p.home-discuss-content We are planning a retreat in Northern India in March. Any...
+						div.home-discuss-thread-container
+							div.row-fluid
+								div.span3
+									a(href="discussion")
+										img.home-profile-pic(src="images/yogaowner1.png")
+								div.span9
+									div.home-discuss-content-container
+										a(href="discussion")
+											p.home-discuss-content Has anyone participated in Yoga Community SF? I am deciding...
+						a#home-go-to-discuss(href="discuss") Go to Discussion Board
