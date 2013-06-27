@@ -1,4 +1,3 @@
-
 module.exports = function(app) {
 
 // get discover page and load the images of the profiles based on the tags
