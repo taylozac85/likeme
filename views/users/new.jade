@@ -1,0 +1,14 @@
+h1 New User
+
+form(method="POST", action="/users")
+  p
+    label(for="username") Username<br />
+    input#username(name="username")
+  p
+    label(for="name") Name<br />
+    input#name(name="name")
+  p
+    label(for="password") Password<br />
+    input#password(type="password", name="password")
+  p
+    input(type="submit", value="Create")
