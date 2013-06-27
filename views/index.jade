@@ -4,14 +4,29 @@ block content
 	div.body-container
 		div.row-fluid
 			div.span8#home-container-left
-				img.home-img(src="images/yoga2.jpg")
+
+				a.viewModal(href="#viewModal", role="button", data-toggle="modal")
+					img.home-img(src="images/yoga2.jpg")
+
 				img.home-img(src="images/yoga7.jpg")
 				img.home-img(src="images/yoga8.jpg")
 				img.home-img(src="images/yoga9.jpg")
 				img.home-img(src="images/yoga11.jpg")
-				img.home-img(src="images/yoga12.jpg")
+				img.home-img(src="images/yoga26.jpg")
 				img.home-img(src="images/yoga13.jpg")
 				img.home-img(src="images/yoga4.jpg")
+				img.home-img(src="images/yoga15.jpg")
+				img.home-img(src="images/yoga31.jpg")
+				img.home-img(src="images/yoga17.jpg")
+				img.home-img(src="images/yoga22.jpg")
+				img.home-img(src="images/yoga23.jpeg")
+				img.home-img(src="images/yoga24.jpg")
+				img.home-img(src="images/yoga-people-1.jpg")
+				img.home-img(src="images/yoga12.jpg")
+				img.home-img(src="images/yoga27.jpg")
+				img.home-img(src="images/yoga28.jpg")
+				img.home-img(src="images/yoga29.jpg")
+				img.home-img(src="images/yoga30.jpg")
 			div.span4#home-container-right
 				div#home-discussion-header-container
 					h3 Discussion Board
@@ -33,7 +48,7 @@ block content
 								div.span9
 									div.home-discuss-content-container
 										a(href="discussion")
-											p.home-discuss-content Is yoga practiced in France with as much enthusiasm as in the United...?
+											p.home-discuss-content Is yoga practiced in France with as much enthusiasm as in the...
 						div.home-discuss-thread-container
 							div.row-fluid
 								div.span3
@@ -42,7 +57,7 @@ block content
 								div.span9
 									div.home-discuss-content-container
 										a(href="discussion")
-											p.home-discuss-content How challenging is it to beomce a Certified Puma Yoga Teacher (CPYT)?
+											p.home-discuss-content How challenging is it to beomce a Certified Puma Yoga Teacher...
 						div.home-discuss-thread-container
 							div.row-fluid
 								div.span3
@@ -71,3 +86,26 @@ block content
 										a(href="discussion")
 											p.home-discuss-content Has anyone participated in Yoga Community SF? I am deciding...
 						a#home-go-to-discuss(href="discuss") Go to Discussion Board
+	div#viewModal.view-modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="viewModalLabel", aria-hidden="true")
+		div.view-modal-body
+			button.close(type="button", data-dismiss="modal", aria-hidden="true") ×
+			div.row-fluid
+				div.span9
+					div.view-large-container
+						img.view-large-img(src="images/yoga2.jpg")
+						div.view-img-label
+							h3.view-img-name Yoga to the People
+							a.pull-right#view-profile-container(href="#")
+								p#view-profile View profile
+					div#view-bottom-imgs-container
+						img.view-bottom-img(src="images/yoga18.jpg")
+						img.view-bottom-img(src="images/yoga19.jpg")
+						img.view-bottom-img-fourth(src="images/yoga21.jpg")
+				div.span3
+					div#view-right-container
+						h4 See also:
+						div#view-right-imgs-container
+							img.view-right-img(src="images/yoga10.jpeg")
+							img.view-right-img(src="images/yoga8.jpg")
+							img.view-right-img(src="images/yoga9.jpg")
+							img.view-right-img(src="images/yoga13.jpg")

@@ -1150,7 +1150,7 @@ img.landing-bg {
 }
 
 .home-discuss-content-container {
-	margin: 0px 5px 0px -20px;
+	margin: 0px 5px 0px -16px;
 }
 
 .home-discuss-content {
@@ -1171,19 +1171,6 @@ img.landing-bg {
 }
 
 /* View Photo Modal */
-
-
-.view-modal-container {
-	max-width: 950px;
-	max-height: 750px;
-	margin: 40px auto;
-	box-shadow: 0 0 5px #000;
-	background-color: rgba(247,247,247,.8);
-}
-
-.view-large-img {
-	display: inline-block;
-}
 
 .view-large-container {
 	text-align: center;
@@ -1255,4 +1242,54 @@ img.landing-bg {
 
 #view-right-imgs-container {
 	text-align: center;
+}
+
+/*/////////////////////*/
+
+.view-modal.fade.in {
+	top: 5%;
+}
+
+.view-modal.fade {
+	top: -25%;
+	-webkit-transition: opacity .3s linear,top .3s ease-out;
+		 -moz-transition: opacity .3s linear,top .3s ease-out;
+		   -o-transition: opacity .3s linear,top .3s ease-out;
+		      transition: opacity .3s linear,top .3s ease-out;
+}
+
+.fade.in {
+	opacity: 1;
+}
+
+.hide {
+	display: none;
+}
+
+.view-modal-body {
+	position: relative;
+	padding: 10px;
+	overflow-y: auto;
+}
+
+.view-modal {
+	position: fixed;
+	top: 5%;
+	left: 50%;
+	z-index: 1050;
+	width: 950px;
+	margin-left: -475px;
+	background-color: rgba(247,247,247,.9);	
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	-webkit-border-radius: 6px;
+		 -moz-border-radius: 6px;
+		      border-radius: 6px;
+	outline: 0;
+	-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+		 -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+		      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	-webkit-background-clip: padding-box;
+		 -moz-background-clip: padding-box;
+		      background-clip: padding-box;
+	overflow-y: auto;
 }
