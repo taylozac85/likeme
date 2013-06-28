@@ -1,50 +1,70 @@
 extends layout
 
 block content
-	script(type="text/javascript", src="/javascripts/message.js")
+	script(type="text/javascript", src="/javascripts/photo-modal.js")
 	div.body-container
 		div.row-fluid
 			div.span8#home-container-left
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")
+				a(href="#viewModal", role="button", data-toggle="modal")
 					img.home-img(src="images/yoga2.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")
+				a(href="#viewModal", role="button", data-toggle="modal")
 					img.home-img(src="images/yoga7.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
-					img.home-img(src="images/yoga8.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
-					img.home-img(src="images/yoga9.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
-					img.home-img(src="images/yoga11.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
-					img.home-img(src="images/yoga26.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
-					img.home-img(src="images/yoga13.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
-					img.home-img(src="images/yoga4.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
-					img.home-img(src="images/yoga15.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
+				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/yoga31.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga9.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga11.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga26.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga13.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga4.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga15.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga40.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/yoga17.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
+				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/yoga22.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
+				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/yoga23.jpeg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
+				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/yoga24.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
+				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/yoga-people-1.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
+				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/yoga12.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
+				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/yoga27.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
+				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/yoga28.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
+				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/yoga29.jpg")
-				a.viewModal(href="#viewModal", role="button", data-toggle="modal")	
+				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/yoga30.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga30.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga40.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga32.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga33.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga34.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga35.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga36.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga37.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga38.jpg")
+				a(href="#viewModal", role="button", data-toggle="modal")	
+					img.home-img(src="images/yoga39.jpg")
 			div.span4#home-container-right
 				div#home-discussion-header-container
 					h3 Discussion Board
@@ -105,7 +125,7 @@ block content
 											p.home-discuss-content Has anyone participated in Yoga Community SF? I am deciding...
 						a#home-go-to-discuss(href="discuss") Go to Discussion Board
 	div#viewModal.view-modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="viewModalLabel", aria-hidden="true")
-		div.view-modal-body
+		div#view-modal-body
 			button.close(type="button", data-dismiss="modal", aria-hidden="true") ×
 			div.row-fluid
 				div.span9
@@ -113,15 +133,16 @@ block content
 						img#view-large-img(src="images/yoga2.jpg")
 						div.view-img-label
 							h3.view-img-name Yoga to the People
-							a.pull-right#view-profile-container(href="#")
+							a.pull-right#view-profile-container(href="profile")
 								p#view-profile View profile
 					div#view-bottom-imgs-container
+						p#view-no-pics No additional pictures yet...
 						a(href="#")
 							img.view-bottom-img(src="images/yoga18.jpg")
 						a(href="#")
 							img.view-bottom-img(src="images/yoga19.jpg")
 						a(href="#")
-							img.view-bottom-img#fourth(src="images/yoga21.jpg")
+							img.view-bottom-img#third(src="images/yoga21.jpg")
 				div.span3
 					div#view-right-container
 						h4 See also:

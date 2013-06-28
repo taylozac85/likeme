@@ -2,12 +2,18 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/users')
   , http = require('http')
+  , mongoose = require('mongoose')
   , path = require('path');
 
 var app = express();
 
-var dbURL = 'mongodb://localhost/temp';
-var db = require('mongoose').connect(dbURL);
+//Uncomment for dev mode
+//var dbURL = 'mongodb://localhost/temp';
+//var db = mongoose.connect(dbURL);
+
+//Comment for dev mode
+var uri = 'mongodb://heroku_app16169546:fgqq6sgb611rb9n9oa3qsffe3k@ds031328.mongolab.com:31328/heroku_app16169546';
+mongoose.connect(uri);
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
