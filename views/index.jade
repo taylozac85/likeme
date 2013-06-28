@@ -1,7 +1,8 @@
 extends layout
 
 block content
-	div.body-container#stanley
+	script(type="text/javascript", src="/javascripts/message.js")
+	div.body-container
 		div.row-fluid
 			div.span8#home-container-left
 				a.viewModal(href="#viewModal", role="button", data-toggle="modal")
@@ -115,9 +116,12 @@ block content
 							a.pull-right#view-profile-container(href="#")
 								p#view-profile View profile
 					div#view-bottom-imgs-container
-						img.view-bottom-img(src="images/yoga18.jpg")
-						img.view-bottom-img(src="images/yoga19.jpg")
-						img.view-bottom-img-fourth(src="images/yoga21.jpg")
+						a(href="#")
+							img.view-bottom-img(src="images/yoga18.jpg")
+						a(href="#")
+							img.view-bottom-img(src="images/yoga19.jpg")
+						a(href="#")
+							img.view-bottom-img#fourth(src="images/yoga21.jpg")
 				div.span3
 					div#view-right-container
 						h4 See also:

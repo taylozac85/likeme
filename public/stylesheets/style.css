@@ -1204,11 +1204,8 @@ img.landing-bg {
 	margin-right: 25px;
 }
 
-.view-bottom-img-fourth {
-	height: 100px;
-	width: 165px;
-	margin-right: 0px;	
-	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+.view-bottom-img#fourth {
+	margin-right: 0px;
 }
 
 .view-img-label {
