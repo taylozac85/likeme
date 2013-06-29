@@ -30,7 +30,14 @@ $(function(){
 
     $('img.home-img').on('click', function(){
     	var $selectedPic = $(this);
-    	$focusPic.attr("src", $selectedPic.attr("src"));
+        var currentSource = $selectedPic.attr("src");
+        var newFocusSource = currentSource.slice(0,7) + currentSource.slice(11);
+        
+        if (currentSource.indexOf("rsz_") != -1) {
+            $focusPic.attr("src", newFocusSource);
+        } else {
+            $focusPic.attr("src", currentSource);
+        };
 
     	if ($selectedPic.attr("src") != "images/yoga2.jpg") {
    			$('img').remove('.view-bottom-img');
@@ -53,18 +60,27 @@ $(function(){
         });
     }).call(this);
 
-    $('#profile-modal-slide-right').on('click', function(){
-        var $newPic = $('img.profile-modal-bottom-img');
-        var newSource = $newPic.attr("src");
-        var $largePic = $('#profile-modal-large-img');
-        var largeSource = $largePic.attr("src");
-        $largePic.attr("src", newSource);
-        
-        $('img.profile-modal-bottom-img').each(function(index){
-            var image1 = $('img.profile-modal-bottom-img')[1];
-            $('img.profile-modal-bottom-img')[0] = image1;
-        });
 
+    $('#profile-modal-slide-right').on('click', function(){
+        alert("Sorry, these babies don't work yet... To check out the other photos, click on them below.");
     });
+
+    $('#profile-modal-slide-left').on('click', function(){
+        alert("Sorry, these babies don't work yet... To check out the other photos, click on them below.");
+    });
+    
+    // $('#profile-modal-slide-right').on('click', function(){
+    //     var $newPic = $('img.profile-modal-bottom-img');
+    //     var newSource = $newPic.attr("src");
+    //     var $largePic = $('#profile-modal-large-img');
+    //     var largeSource = $largePic.attr("src");
+    //     $largePic.attr("src", newSource);
+        
+    //     $('img.profile-modal-bottom-img').each(function(index){
+    //         var image1 = $('img.profile-modal-bottom-img')[1];
+    //         $('img.profile-modal-bottom-img')[0] = image1;
+    //     });
+
+    // });
 
 });

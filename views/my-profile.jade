@@ -1,6 +1,7 @@
 extends layout
 
 block content
+	script(type="text/javascript", src="/javascripts/photo-modal.js")
 	div#myModal.modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
 		div.modal-body
 			button.close(type="button", data-dismiss="modal", aria-hidden="true") ×
@@ -13,12 +14,12 @@ block content
 			button.btn.btn-primary Send
 	div.body-container-gray
 		div#profile2-background-container
-			img#profile2-background(src="images/yoga-bg1-taller.png")
+			img#profile2-background(src="images/yoga-profile-bg.jpg")
 			a(href="edit-profile")
 				button.btn.btn-primary#edit-profile Edit Profile
 			div.profile2-pic-label-container
 				h3.profile2-pic-name Yoga to the People
-				a.pull-right#view-photos-container(href="#")
+				a.pull-right#view-photos-container(href="#profile-photo-modal", role="button", data-toggle="modal")
 					p#view-photos View photos
 		div#profile2-content-container
 			div.row-fluid
@@ -106,3 +107,17 @@ block content
 											p.qa-profile2-content Yes! It was wonderful. It was great to meet with so many other yoga studios. I am definitely going to join again this year.
 								div.view-convo-container
 									a(href="discussion") View Discussion
+		div#profile-photo-modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="profile-photo-modalLabel", aria-hidden="true")
+			div#profile-modal-large-container
+				img#profile-modal-large-img(src="images/yoga-profile-bg.jpg")
+			div#profile-modal-bottom-imgs-container
+				a(href="#")
+					img.profile-modal-bottom-img(src="images/yoga10-8.jpg")
+				a(href="#")
+					img.profile-modal-bottom-img(src="images/yoga10-3.jpg")
+				a(href="#")
+					img.profile-modal-bottom-img(src="images/yoga10-4.jpg")
+				a(href="#")
+					img.profile-modal-bottom-img#last(src="images/yoga10-6.jpg")
+				a#profile-modal-slide-left(class="carousel-control left", href="#myCarousel", data-slide="prev") &lsaquo;
+				a#profile-modal-slide-right(class="carousel-control right", href="#myCarousel", data-slide="next") &rsaquo;
