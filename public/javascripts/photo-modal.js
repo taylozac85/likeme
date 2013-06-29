@@ -39,7 +39,7 @@ $(function(){
             $focusPic.attr("src", currentSource);
         };
 
-    	if ($selectedPic.attr("src") != "images/yoga2.jpg") {
+    	if ($selectedPic.attr("src") != "images/rsz_yoga2.jpg") {
    			$('img').remove('.view-bottom-img');
     	}
     });
