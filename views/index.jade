@@ -130,6 +130,7 @@ block content
 			div.row-fluid
 				div.span9
 					div.view-large-container
+						//a(href="#viewLargestModal", role="button", data-toggle="modal")
 						img#view-large-img(src="images/yoga2.jpg")
 						div.view-img-label
 							h3.view-img-name Yoga to the People
@@ -155,3 +156,8 @@ block content
 								img.view-right-img(src="images/yoga9.jpg")
 							a(href="#")	
 								img.view-right-img(src="images/yoga13.jpg")
+//
+	div#viewLargestModal.view-largest-modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="viewLargestModalLabel", aria-hidden="true")
+		div#view-largest-modal-body
+			button#largest-photo-modal.close(type="button", data-dismiss="modal", aria-hidden="true") ×
+			img#largestModalPhoto(src="#");

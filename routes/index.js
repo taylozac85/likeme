@@ -11,6 +11,10 @@ module.exports = function(app) {
 	  res.render('index');
 	});	
 
+	app.get('/h', function (req, res){
+	  res.render('home');
+	});	
+
 	app.get('/landing-page', function (req, res){
 	  res.render('landing-page');
 

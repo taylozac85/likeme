@@ -44,10 +44,29 @@ $(function(){
     	}
     });
 
+    $('#viewLargestModal').on('hidden', function(){
+        $('#viewModal').show(); 
+    });
+
+
+    // $('#view-large-img').on('click', function(){
+    //     var $largestPhoto = $('#largestModalPhoto');
+    //     $largestPhoto.attr('src', $(this).attr('src'));
+
+    //     var viewHeight = $(window).height();
+    //     var viewWidth = $(window).width();
+    //     $('#viewLargestModal').css('width', viewWidth);
+    //     $('#viewLargestModal').css('heigh', viewHeight);
+
+    //     $('#viewModal').hide();
+
+    // });
+
 });
 
 
 // Profile View Photos Modal
+
 $(function(){
     (function(){
         $('img.profile-modal-bottom-img').on('click', function(){
@@ -59,28 +78,28 @@ $(function(){
             $newPic.attr("src", largeSource);
         });
     }).call(this);
-
+    
+    // Will want to replace with cycling through the index of photos associated with a user
+    $('#profile-modal-slide-left').on('click', function(){
+        var $focusPhoto = $('#profile-modal-large-img');
+        var $focusSource = $focusPhoto.attr('src');
+        var $sourceIndex = parseInt($focusSource.slice(14,15));
+        if ($sourceIndex == 2) {
+            $focusPhoto.attr('src', "images/yoga10-8.jpg");
+        } else {
+            $focusPhoto.attr('src', "images/yoga10-" + ($sourceIndex - 1) + ".jpg");
+        }
+    });
 
     $('#profile-modal-slide-right').on('click', function(){
-        alert("Sorry, these babies don't work yet... To check out the other photos, click on them below.");
+        var $focusPhoto = $('#profile-modal-large-img');
+        var $focusSource = $focusPhoto.attr('src');
+        var $sourceIndex = parseInt($focusSource.slice(14,15));
+        if ($sourceIndex == 8) {
+            $focusPhoto.attr('src', "images/yoga10-2.jpg");
+        } else {
+            $focusPhoto.attr('src', "images/yoga10-" + ($sourceIndex + 1) + ".jpg");
+        }    
     });
-
-    $('#profile-modal-slide-left').on('click', function(){
-        alert("Sorry, these babies don't work yet... To check out the other photos, click on them below.");
-    });
-    
-    // $('#profile-modal-slide-right').on('click', function(){
-    //     var $newPic = $('img.profile-modal-bottom-img');
-    //     var newSource = $newPic.attr("src");
-    //     var $largePic = $('#profile-modal-large-img');
-    //     var largeSource = $largePic.attr("src");
-    //     $largePic.attr("src", newSource);
-        
-    //     $('img.profile-modal-bottom-img').each(function(index){
-    //         var image1 = $('img.profile-modal-bottom-img')[1];
-    //         $('img.profile-modal-bottom-img')[0] = image1;
-    //     });
-
-    // });
 
 });
