@@ -1,35 +1,9 @@
 // Index View Photos Modal
 $(function(){
 
-    var $focusPic = $('#view-large-img');
-    
-    $('img.view-right-img').on('click', function(){
-        var $newPic = $(this);
-        var newSource = $newPic.attr("src");
-        $focusPic.attr("src", newSource);
-
-        $('img').remove('.view-bottom-img');
-        $('#view-no-pics').show();
-
-        (function(){
-            var randomPic = Math.floor(Math.random() * 40 + 1);
-            $('img.view-right-img').each(function(index){
-                $(this).attr("src", "images/yoga" + (randomPic + index) + ".jpg");
-            });    
-        }).call(this);
-        
-    });
-    
-    $('img.view-bottom-img').on('click', function(){
-        var $newPic = $(this);
-        var newSource = $newPic.attr("src");
-        var focusSource = $focusPic.attr("src");
-        $focusPic.attr("src", newSource);
-        $newPic.attr("src", focusSource);
-    });
-
     $('img.home-img').on('click', function(){
-    	var $selectedPic = $(this);
+    	var $focusPic = $('#view-large-img');
+        var $selectedPic = $(this);
         var currentSource = $selectedPic.attr("src");
         var newFocusSource = currentSource.slice(0,7) + currentSource.slice(11);
         
@@ -44,23 +18,31 @@ $(function(){
     	}
     });
 
-    $('#viewLargestModal').on('hidden', function(){
-        $('#viewModal').show(); 
+    $('#profile-modal-slide-left-home').on('click', function(){
+        var $focusPhoto = $('#view-large-img');
+        var $focusSource = $focusPhoto.attr('src');
+        var $sourceIndex = parseInt($focusSource.slice(11,13));
+        if ($sourceIndex == 1) {
+            $focusPhoto.attr('src', "images/yoga44.jpg");
+        } else if ($sourceIndex <= 10) {
+            $focusPhoto.attr('src', "images/yoga" + "0" + ($sourceIndex - 1) + ".jpg");
+        } else {
+            $focusPhoto.attr('src', "images/yoga" + ($sourceIndex - 1) + ".jpg");
+        }
     });
 
-
-    // $('#view-large-img').on('click', function(){
-    //     var $largestPhoto = $('#largestModalPhoto');
-    //     $largestPhoto.attr('src', $(this).attr('src'));
-
-    //     var viewHeight = $(window).height();
-    //     var viewWidth = $(window).width();
-    //     $('#viewLargestModal').css('width', viewWidth);
-    //     $('#viewLargestModal').css('heigh', viewHeight);
-
-    //     $('#viewModal').hide();
-
-    // });
+    $('#profile-modal-slide-right-home').on('click', function(){
+        var $focusPhoto = $('#view-large-img');
+        var $focusSource = $focusPhoto.attr('src');
+        var $sourceIndex = parseInt($focusSource.slice(11,13));
+        if ($sourceIndex == 44) {
+            $focusPhoto.attr('src', "images/yoga01.jpg");
+        } else if ($sourceIndex < 9) {
+            $focusPhoto.attr('src', "images/yoga" + "0" + ($sourceIndex + 1) + ".jpg");
+        } else {
+            $focusPhoto.attr('src', "images/yoga" + ($sourceIndex + 1) + ".jpg");
+        }
+    });
 
 });
 

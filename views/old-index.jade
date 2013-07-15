@@ -6,13 +6,13 @@ block content
 		div.row-fluid
 			div.span8#home-container-left
 				a(href="#viewModal", role="button", data-toggle="modal")
-					img.home-img(src="images/rsz_yoga02.jpg")
+					img.home-img(src="images/rsz_yoga2.jpg")
 				a(href="#viewModal", role="button", data-toggle="modal")
-					img.home-img(src="images/yoga07.jpg")
+					img.home-img(src="images/yoga7.jpg")
 				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/rsz_yoga31.jpg")
 				a(href="#viewModal", role="button", data-toggle="modal")	
-					img.home-img(src="images/rsz_yoga09.jpg")
+					img.home-img(src="images/rsz_yoga9.jpg")
 				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/rsz_yoga11.jpg")
 				a(href="#viewModal", role="button", data-toggle="modal")	
@@ -20,7 +20,7 @@ block content
 				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/rsz_yoga13.jpg")
 				a(href="#viewModal", role="button", data-toggle="modal")	
-					img.home-img(src="images/yoga04.jpg")
+					img.home-img(src="images/yoga4.jpg")
 				a(href="#viewModal", role="button", data-toggle="modal")	
 					img.home-img(src="images/yoga15.jpg")
 				a(href="#viewModal", role="button", data-toggle="modal")	
@@ -125,12 +125,60 @@ block content
 											p.home-discuss-content Has anyone participated in Yoga Community SF? I am deciding...
 						a#home-go-to-discuss(href="discuss") Go to Discussion Board
 	div#viewModal.view-modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="viewModalLabel", aria-hidden="true")
-		div#view-large-container
+		div#view-modal-body
 			button.close(type="button", data-dismiss="modal", aria-hidden="true") ×
-			img#view-large-img(src="images/yoga10-2.jpg")
-			div.view-img-label
-				h3.view-img-name Yoga to the People
-				a.pull-right#view-profile-container(href="profile")
-					p#view-profile View profile
-		a#profile-modal-slide-left-home(class="carousel-control left", href="#myCarousel", data-slide="prev") &lsaquo;
-		a#profile-modal-slide-right-home(class="carousel-control right", href="#myCarousel", data-slide="next") &rsaquo;
+			div.row-fluid
+				div.span9
+					div.view-large-container
+						//a(href="#viewLargestModal", role="button", data-toggle="modal")
+						img#view-large-img(src="images/yoga2.jpg")
+						div.view-img-label
+							h3.view-img-name Yoga to the People
+							a.pull-right#view-profile-container(href="profile")
+								p#view-profile View profile
+					div#view-bottom-imgs-container
+						p#view-no-pics No additional pictures yet...
+						a(href="#")
+							img.view-bottom-img(src="images/yoga18.jpg")
+						a(href="#")
+							img.view-bottom-img(src="images/yoga19.jpg")
+						a(href="#")
+							img.view-bottom-img#third(src="images/yoga21.jpg")
+				div.span3
+					div#view-right-container
+						h4 See also:
+						div#view-right-imgs-container
+							a(href="#")
+								img.view-right-img(src="images/yoga10.jpeg")
+							a(href="#")	
+								img.view-right-img(src="images/yoga8.jpg")
+							a(href="#")	
+								img.view-right-img(src="images/yoga9.jpg")
+							a(href="#")	
+								img.view-right-img(src="images/yoga13.jpg")
+//
+	div#viewLargestModal.view-largest-modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="viewLargestModalLabel", aria-hidden="true")
+		div#view-largest-modal-body
+			button#largest-photo-modal.close(type="button", data-dismiss="modal", aria-hidden="true") ×
+			img#largestModalPhoto(src="#");
+
+
+
+// Old JS
+//
+	$('#viewLargestModal').on('hidden', function(){
+	    $('#viewModal').show(); 
+	  });
+
+    // $('#view-large-img').on('click', function(){
+    //     var $largestPhoto = $('#largestModalPhoto');
+    //     $largestPhoto.attr('src', $(this).attr('src'));
+
+    //     var viewHeight = $(window).height();
+    //     var viewWidth = $(window).width();
+    //     $('#viewLargestModal').css('width', viewWidth);
+    //     $('#viewLargestModal').css('heigh', viewHeight);
+
+    //     $('#viewModal').hide();
+
+    // });
