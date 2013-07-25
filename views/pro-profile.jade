@@ -9,6 +9,7 @@ html
 		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
 		link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
 	body
+		script(type="text/javascript", src="/javascripts/photo-modal.js")
 		div.navbar.navbar-inverse.navbar-fixed-top
 			div.navbar-inner
 				div.navbar-container
@@ -30,32 +31,41 @@ html
 								p Taylor & Co. Interiors designs and furnishes hundreds of commercial properties across the United States every year. Each project may take a business owner or builder from blueprints to finishing touches. We offer functionality, style and value, and we believe that good business and great design go hand in hand. At Taylor & Co. Interiors, we start with an agreed upon budget, making everything that follows a breeze.
 								p Our award-winning designers love to work in a variety of styles and a range of
 								// aesthetics, never getting too comfortable with a particular 'look.'
-								a(href="#") ...more
-								//p Services Provided:
-								//p We offer a variety of interior design services ranging from project management to furniture sales.
+								div#pro-description-more
+									p Services Provided:
+									p We offer a variety of interior design services ranging from project management to furniture sales.
+									a#pro-less(href="#") less
+								a#pro-more(href="#") ...more
 				div.span3#pro-contact-container
-					a#pro-contact-me.btn.btn-primary(href="#") Contact Me
+					a#pro-contact-me.btn.btn-primary(href="mailto:someone@example.com?Subject=Hello%20again", target="_top") Contact Me
 					p.pro-contact-info
 						a(href="#") www.taylorcodesign.com
 					p.pro-contact-info <strong>Phone:</strong>  711.307.7433
 					p.pro-contact-info <strong>Email:</strong>  zach@taylorcodesign.com
 					p.pro-contact-info <strong>Address:</strong> 2775 Willmary Dr., Marin County, CA 94956
 			div#pro-album-container
-				div.pro-album-cover
-					a(href="profile")
-						img.pro-album-pic(src="images/coffee1-2.jpg")
+				div#pro-album-1.pro-album-cover
+					a(href="#pro-photo-modal", role="button", data-toggle="modal")
+						img#pro-album.pro-album-pic(src="images/coffee1-2.jpg")
 						div.pro-album-label-container
 							div.pro-album-label
 								p.search-pic-name Strand 21 Coffee
 				div.pro-album-cover
-					a(href="profile")
+					a(href="#")
 						img.pro-album-pic(src="images/wine1-1.jpg")
 						div.pro-album-label-container
 							div.pro-album-label
 								p.search-pic-name Wine Collection
 				div.pro-album-cover
-					a(href="profile")
-						img.pro-album-pic(src="images/yoga10.jpg")
+					a(href="#")
+						img.pro-album-pic(src="images/yoga10-2.jpg")
 						div.pro-album-label-container
 							div.pro-album-label
 								p.search-pic-name Yoga Savana
+		div#pro-photo-modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="profile-photo-modalLabel", aria-hidden="true")
+			div#profile-modal-large-container
+				button.close(type="button", data-dismiss="modal", aria-hidden="true") ×
+				img#profile-modal-large-img(src="#")
+			a#pro-modal-slide-left(class="carousel-control left", href="#myCarousel", data-slide="prev") &lsaquo;
+			a#pro-modal-slide-right(class="carousel-control right", href="#myCarousel", data-slide="next") &rsaquo;
+		

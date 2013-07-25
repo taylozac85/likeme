@@ -1417,16 +1417,6 @@ img#largestModalPhoto {
 	padding: 0px 0px;
 }
 
-.pro-album-cover {
-	width: 330px;
-	height: 260px;
-	position: relative;
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 4px;
-	display: inline-block;
-	margin: 0px 35px 35px 0px;
-}
-
 .pro-album-label-container {
 	width: 100%;
 	height: 40px;
@@ -1446,8 +1436,59 @@ img#largestModalPhoto {
 	left: 10px;	
 }
 
+.pro-album-cover {
+	width: 330px;
+	height: 250px;
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	display: inline-block;
+	margin: 0px 35px 35px 0px;
+	overflow: hidden;
+}
+
 .pro-album-pic {
-	height: 100%;
+	height: 250px;
 	width: auto;
 	border-radius: 2px;
+}
+
+#profile-modal-large-container {
+	height: 550px;
+	padding: 0px;
+	text-align: center;
+}
+
+#profile-modal-large-img {
+	max-height: 100%;
+}
+
+#pro-photo-modal {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	z-index: 1050;
+	width: 950px;
+	margin-left: -485px;
+	padding: 10px;
+	background-color: rgba(220, 220, 220, 0.9);
+	background-color: rgba(247, 247, 247, 0.9);
+	outline: 0;
+	-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+		 -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+		      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+	-webkit-background-clip: padding-box;
+		 -moz-background-clip: padding-box;
+		      background-clip: padding-box;
+	overflow-y: scroll;	
+}
+
+.fillwidth { 
+	width: 100%;
+	height: auto;
+}
+
+.fillheight {
+	height: 100%;
+	width: auto;
 }

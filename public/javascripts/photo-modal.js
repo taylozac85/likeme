@@ -46,7 +46,6 @@ $(function(){
 
 });
 
-
 // Profile View Photos Modal
 
 $(function(){
@@ -83,5 +82,54 @@ $(function(){
             $focusPhoto.attr('src', "images/yoga10-" + ($sourceIndex + 1) + ".jpg");
         }    
     });
+
+});
+
+// Pro Profile
+
+$(function(){
+
+    $('#pro-album-1').on('click', function(){
+        var $focusPhoto = $('img#profile-modal-large-img');
+        $focusPhoto.attr('src', 'images/coffee1-2.jpg');
+    });
+
+   $('#pro-modal-slide-right').on('click', function(){
+        var $focusPhoto = $('#profile-modal-large-img');
+        var $focusSource = $focusPhoto.attr('src');
+        var $sourceIndex = parseInt($focusSource.slice(15,16));
+        if ($sourceIndex == 10) {
+            $focusPhoto.attr('src', "images/coffee1-2.jpg");
+        } else {
+            $focusPhoto.attr('src', "images/coffee1-" + ($sourceIndex + 1) + ".jpg");
+        }    
+    });
+
+    $('#pro-modal-slide-left').on('click', function(){
+        var $focusPhoto = $('#profile-modal-large-img');
+        var $focusSource = $focusPhoto.attr('src');
+        var $sourceIndex = parseInt($focusSource.slice(15,16));
+        if ($sourceIndex == 1) {
+            $focusPhoto.attr('src', "images/coffee1-9.jpg");
+        } else {
+            $focusPhoto.attr('src', "images/coffee1-" + ($sourceIndex - 1) + ".jpg");
+        }    
+    });
+
+    // More/Less
+
+    $('#pro-description-more').hide();
+
+    $('#pro-more').on('click', function(){
+        $('#pro-description-more').show();
+        $(this).hide();
+        $('#pro-less').show();        
+    })
+
+    $('#pro-less').on('click', function(){
+        $('#pro-description-more').hide();
+        $(this).hide();
+        $('#pro-more').show();
+    })
 
 });
