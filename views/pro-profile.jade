@@ -1,0 +1,61 @@
+doctype 5
+html
+	head
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+		script(src='/bootstrap/js/bootstrap.min.js')
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+	body
+		div.navbar.navbar-inverse.navbar-fixed-top
+			div.navbar-inner
+				div.navbar-container
+					ul.nav.pull-right
+						li
+							a#navbar-img-link(href="pro")
+								p.pull-right#pro-profile-nav Edit Profile
+		div.pro-body-container-gray
+			div.row-fluid
+				div.span9
+					div.row-fluid
+						div.span3
+							img#pro-person-pic(src="images/zach2.png")
+						div.span9#pro-info-container
+							h4#pro-person-name Zachary Taylor
+							p#pro-company-name Taylor & Co. Interiors
+							p#pro-location Marin County, CA
+							div#pro-description
+								p Taylor & Co. Interiors designs and furnishes hundreds of commercial properties across the United States every year. Each project may take a business owner or builder from blueprints to finishing touches. We offer functionality, style and value, and we believe that good business and great design go hand in hand. At Taylor & Co. Interiors, we start with an agreed upon budget, making everything that follows a breeze.
+								p Our award-winning designers love to work in a variety of styles and a range of
+								// aesthetics, never getting too comfortable with a particular 'look.'
+								a(href="#") ...more
+								//p Services Provided:
+								//p We offer a variety of interior design services ranging from project management to furniture sales.
+				div.span3#pro-contact-container
+					a#pro-contact-me.btn.btn-primary(href="#") Contact Me
+					p.pro-contact-info
+						a(href="#") www.taylorcodesign.com
+					p.pro-contact-info <strong>Phone:</strong>  711.307.7433
+					p.pro-contact-info <strong>Email:</strong>  zach@taylorcodesign.com
+					p.pro-contact-info <strong>Address:</strong> 2775 Willmary Dr., Marin County, CA 94956
+			div#pro-album-container
+				div.pro-album-cover
+					a(href="profile")
+						img.pro-album-pic(src="images/coffee1-2.jpg")
+						div.pro-album-label-container
+							div.pro-album-label
+								p.search-pic-name Strand 21 Coffee
+				div.pro-album-cover
+					a(href="profile")
+						img.pro-album-pic(src="images/wine1-1.jpg")
+						div.pro-album-label-container
+							div.pro-album-label
+								p.search-pic-name Wine Collection
+				div.pro-album-cover
+					a(href="profile")
+						img.pro-album-pic(src="images/yoga10.jpg")
+						div.pro-album-label-container
+							div.pro-album-label
+								p.search-pic-name Yoga Savana

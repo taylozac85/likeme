@@ -9,7 +9,6 @@ app.get('/profile', function (req, res){
   res.render('profile');
 });
 
-
 /*
  *  gets my-profile which is going to be the same route with an
  *	if statement that checks if it's the usesr and displays the edit button
@@ -33,4 +32,8 @@ app.get('/edit-profile', function (req, res){
 
 // remove photos allows you to delete photos
 
+app.get('/pro', function (req, res){
+  res.render('pro-profile');
+});
+ 
 };

@@ -1,0 +1,10 @@
+wp_rp_recommendations_callback({
+  "status": "ok", 
+  "data": {
+    "tlb": "B", 
+    "results": [], 
+    "settings": {
+      "csm_abt": "A"
+    }
+  }
+})
