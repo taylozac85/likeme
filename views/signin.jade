@@ -1,0 +1,21 @@
+doctype 5
+html
+	head
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+		script(src='/bootstrap/js/bootstrap.min.js')
+
+	body
+		div#loginModal.modal(tabindex="-1", role="dialog", aria-labelledby="loginModalLabel", aria-hidden="true")
+			div.modal-body
+				label E-mail:
+				input.login-input(type="text")
+				label Password:
+				input.login-input(type="text")
+				div
+					a#login Log in
+			div.modal-footer
+				p#new-user New user?
+				a#invite-btn.btn.btn-primary.signin-action-btn(href="#inviteModal", role="button", data-toggle="modal") Create profile
